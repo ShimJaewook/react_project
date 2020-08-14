@@ -1,9 +1,14 @@
-import item_data from "../item_data";
-import { observable } from "mobx";
+import {observable, action} from "mobx";
+import Items from "../item_data";
 
 class ItemStore {
-  @observable
-  ItemList = item_data;
-}
+    @observable
+    items = Items;
 
+    @observable
+    item = {};
+
+
+
+}
 export default new ItemStore();
