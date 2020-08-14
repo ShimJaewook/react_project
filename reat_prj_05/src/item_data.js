@@ -6,6 +6,7 @@ const Items = [
     imgUrl: "./item_images/toy_sandCastle.png",
     description: "노즈워크를 위한 장난감입니다.",
     category: "toy",
+    class: "A",
   },
   {
     id: 1,
@@ -14,6 +15,7 @@ const Items = [
     imgUrl: "./item_images/food_pumkinCookie.png",
     description: "다이어트와 변비에 좋은 비타민A가 가득한 펌킨쿠키",
     category: "food",
+    class: "A",
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const Items = [
     imgUrl: "./item_images/bath_toothbrush.png",
     description: "1만 개의 부드러운 칫솔모로 구석구석 깨끗하게",
     category: "bath",
+    class: "A",
   },
   {
     id: 3,
@@ -30,6 +33,7 @@ const Items = [
     imgUrl: "./item_images/food_sweetPotato.png",
     description: "국산 고구마로 만든 고담백 간식 말랑 고구마",
     category: "food",
+    class: "A",
   },
   {
     id: 4,
@@ -52,7 +56,8 @@ const Items = [
     name: "댕댕이 치킨맥주 세트",
     price: "18900",
     imgUrl: "./item_images/toy_chickenBeer.png",
-    description: "강아지들도 즐길 자격이 있다! 우리만 즐겼던 치킨과 맥주 댕댕이도 즐기면 얼마나 좋게요~?",
+    description:
+      "강아지들도 즐길 자격이 있다! 우리만 즐겼던 치킨과 맥주 댕댕이도 즐기면 얼마나 좋게요~?",
     category: "toy",
   },
   {
@@ -76,9 +81,10 @@ const Items = [
     name: "피글렛 극세사 샤워 가운",
     price: "42000",
     imgUrl: "./item_images/clothes_pigletCloth.png",
-    description: "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
+    description:
+      "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
     category: "clothes",
-  }, 
+  },
   {
     id: 10,
     name: "반려견 안전벨트",
@@ -88,7 +94,7 @@ const Items = [
     category: "accessary",
   },
   {
-    id:11,
+    id: 11,
     name: "후라이드 치킨",
     price: "17000",
     imgUrl: "./item_images/food_friedChicken.png",
@@ -96,7 +102,7 @@ const Items = [
     category: "food",
   },
   {
-    id:12,
+    id: 12,
     name: "프리미엄 김밥",
     price: "7000",
     imgUrl: "./item_images/food_gimbab.png",
@@ -104,7 +110,7 @@ const Items = [
     category: "food",
   },
   {
-    id:13,
+    id: 13,
     name: "블루베리 아이스크림",
     price: "21000",
     imgUrl: "./item_images/food_blueberryIceCream.png",
@@ -112,7 +118,7 @@ const Items = [
     category: "food",
   },
   {
-    id:14,
+    id: 14,
     name: "반숙 계란 삑삑 토이",
     price: "32000",
     imgUrl: "./item_images/food_egg.png",
@@ -120,7 +126,7 @@ const Items = [
     category: "food",
   },
   {
-    id:15,
+    id: 15,
     name: "센텔라 크림",
     price: "16000",
     imgUrl: "./item_images/bath_cream.png",

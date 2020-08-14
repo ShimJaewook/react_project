@@ -1,27 +1,32 @@
 import React, { Component } from "react";
 import { Item } from "semantic-ui-react";
+
 import ItemView from "./ItemView";
+import "./ItemView.css";
 
 class ItemListView extends Component {
+  state = { visible: true };
+
+  handleShow = (e) => {
+    this.setState({ visible: !this.state.visible });
+  };
+
   render() {
-    const ItemList = this.props.ItemList.map((item) => {
-      return (
-        <ItemView key={item.imgUrl} item={item}/>
-      );
+    const filtered = this.props.ItemList.filter((Item) => Item.class == "A");
+    const ItemList = filtered.map((item) => {
+      return <ItemView key={item.imgUrl} item={item} />;
     });
 
-    // let ItemList_view = ItemList.length;
-
-    // // ItemList.map((val) => {
-    // //   return <li>{val}</li>;
-    // // });
-
-    // return <div>{ItemList.length > 0 ? ItemList_view : <li>none</li>} </div>;
     return (
       <div>
-        <Item.Group>{ItemList}</Item.Group>
+        <div className="sub_img" onClick={this.handleShow}>
+          이거에요
+        </div>
+        <div className={this.state.visible == true ? "show" : "hide"}>
+          <Item.Group>{ItemList}</Item.Group>
+        </div>
       </div>
-    )
+    );
   }
 }
 
