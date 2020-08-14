@@ -1,2 +1,6 @@
 git test - Gayeon
+<<<<<<< HEAD
 git test - Dong
+=======
+git test2 -Gayeon
+>>>>>>> 00f91844695923fd55cfdea4c9d564c30e0eb1e5
