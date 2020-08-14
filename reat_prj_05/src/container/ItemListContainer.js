@@ -8,12 +8,11 @@ class ItemListContainer extends Component {
   //클릭함수 구현
 
   render() {
-    const { items } = this.props.ItemStore;
+    const { items, value } = this.props.ItemStore;
 
     return (
       <div>
-        <div className="sub_img"></div>
-        <ItemListView ItemList={items} />
+        <ItemListView ItemList={items} value={value} />
       </div>
     );
   }
