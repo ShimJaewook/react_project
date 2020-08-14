@@ -1,5 +1,6 @@
 const Items = [
   {
+    id: 0,
     name: "모래성 장난감",
     price: "25000",
     imgUrl: "./item_images/toy_sandCastle.png",
@@ -7,6 +8,7 @@ const Items = [
     category: "toy",
   },
   {
+    id: 1,
     name: "호박 쿠키",
     price: "5000",
     imgUrl: "./item_images/food_pumkinCookie.png",
@@ -14,6 +16,7 @@ const Items = [
     category: "food",
   },
   {
+    id: 2,
     name: "소프트 틈새 케어 칫솔",
     price: "7300",
     imgUrl: "./item_images/bath_toothbrush.png",
@@ -21,6 +24,7 @@ const Items = [
     category: "bath",
   },
   {
+    id: 3,
     name: "말랑 고구마",
     price: "6500",
     imgUrl: "./item_images/food_sweetPotato.png",
@@ -28,6 +32,7 @@ const Items = [
     category: "food",
   },
   {
+    id: 4,
     name: "이지클린 드라이 샴푸",
     price: "18500",
     imgUrl: "./item_images/bath_dryShampoo.png",
@@ -35,6 +40,7 @@ const Items = [
     category: "bath",
   },
   {
+    id: 5,
     name: "소고기 육포",
     price: "23000",
     imgUrl: "./item_images/food_beefJerky.png",
@@ -42,6 +48,7 @@ const Items = [
     category: "food",
   },
   {
+    id: 6,
     name: "댕댕이 치킨맥주 세트",
     price: "18900",
     imgUrl: "./item_images/toy_chickenBeer.png",
@@ -49,6 +56,7 @@ const Items = [
     category: "toy",
   },
   {
+    id: 7,
     name: "푸우 극세사 샤워 가운",
     price: "42000",
     imgUrl: "./item_images/clothes_pooCloth.png",
@@ -56,6 +64,7 @@ const Items = [
     category: "clothes",
   },
   {
+    id: 8,
     name: "LED 라이트",
     price: "13000",
     imgUrl: "./item_images/accessary_ledLight.png",
@@ -63,12 +72,61 @@ const Items = [
     category: "accessary",
   },
   {
+    id: 9,
     name: "피글렛 극세사 샤워 가운",
     price: "42000",
     imgUrl: "./item_images/clothes_pigletCloth.png",
     description: "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
     category: "clothes",
-  }
+  }, 
+  {
+    id: 10,
+    name: "반려견 안전벨트",
+    price: "20000",
+    imgUrl: "./item_images/accessary_safeBelt.png",
+    description: "길이는 짧아지고 더 튼튼해진 반려견 안전벨트",
+    category: "accessary",
+  },
+  {
+    id:11,
+    name: "후라이드 치킨",
+    price: "17000",
+    imgUrl: "./item_images/food_friedChicken.png",
+    description: "닭 가슴살과 코코넛이 만나 치느님이 되었어요!",
+    category: "food",
+  },
+  {
+    id:12,
+    name: "프리미엄 김밥",
+    price: "7000",
+    imgUrl: "./item_images/food_gimbab.png",
+    description: "영양이 한줄에 가득한 고단백 프리미엄 김밥!",
+    category: "food",
+  },
+  {
+    id:13,
+    name: "블루베리 아이스크림",
+    price: "21000",
+    imgUrl: "./item_images/food_blueberryIceCream.png",
+    description: "시원하게 즐기는 새콤달콤 블루베리 아이스크림",
+    category: "food",
+  },
+  {
+    id:14,
+    name: "반숙 계란 삑삑 토이",
+    price: "32000",
+    imgUrl: "./item_images/food_egg.png",
+    description: "이것은 계란인가 장난감인가, 역대급 기획!",
+    category: "food",
+  },
+  {
+    id:15,
+    name: "센텔라 크림",
+    price: "16000",
+    imgUrl: "./item_images/bath_cream.png",
+    description: "손상되고 건조한 피부에 빠른 회복이 필요할 때 필수 아이템",
+    category: "bath",
+  },
 ];
 
 export default Items;
