@@ -7,7 +7,7 @@ class ItemView extends Component {
         return (
             <div>
                 <Item>
-                    <Item.Image size="tiny" src={item.imgUrl} />
+                    <Item.Image size="small" src={item.imgUrl} />
                     <Item.Content>
                         <Item.Header as="a">{item.name}</Item.Header>
                         <Item.Description>
