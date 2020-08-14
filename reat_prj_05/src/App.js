@@ -1,9 +1,10 @@
-import React from 'react';
-
+import React from "react";
+import ItemListContainer from "./container/ItemListContainer";
 
 function App() {
   return (
-    <div >
+    <div>
+      <ItemListContainer />
     </div>
   );
 }
