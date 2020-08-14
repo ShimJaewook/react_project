@@ -1,7 +1,7 @@
 const Items = [
     {
-        name: "",
-        price: "",
+        name: "aaa",
+        price: "aa",
         imgUrl: "",
         description: "",
         category: "",
