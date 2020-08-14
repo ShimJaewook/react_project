@@ -5,12 +5,14 @@ import ItemListView from "../view/ItemListView";
 @inject("ItemStore")
 @observer
 class ItemListContainer extends Component {
+//클릭함수 구현
+
   render() {
-    const { ItemList } = this.props.ItemStore.ItemList;
+    const { items } = this.props.ItemStore;
 
     return (
       <div>
-        <ItemListView ItemList={ItemList} />
+        <ItemListView ItemList={items} />
       </div>
     );
   }
