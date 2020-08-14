@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Item } from "semantic-ui-react";
+import { Grid, Image } from "semantic-ui-react";
 
 class ItemView extends Component {
 
@@ -7,7 +8,11 @@ class ItemView extends Component {
     const { item } = this.props;
     return (
       <div>
-        <div className>
+        <div width="200px">
+          <Image src={item.imgUrl} width="200px" height="200px" />
+        </div>
+
+        {/* <div className>
           <Item>
             <Item.Image size="tiny" src={item.imgUrl} />
             <Item.Content>
@@ -20,7 +25,7 @@ class ItemView extends Component {
               </Item.Meta>
             </Item.Content>
           </Item>
-        </div>
+        </div> */}
       </div>
     );
   }
