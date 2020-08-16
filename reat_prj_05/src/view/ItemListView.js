@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Item } from "semantic-ui-react";
-
 import ItemView from "./ItemView";
 import "./ItemView.css";
 
@@ -12,7 +10,12 @@ class ItemListView extends Component {
   };
 
   render() {
-    const filtered = this.props.ItemList.filter((Item) => Item.class == "A");
+    const item_class = this.props.item_class;
+    // console.log(item_class);
+
+    const filtered = this.props.ItemList.filter(
+      (Item) => Item.class === item_class
+    );
     const ItemList = filtered.map((item) => {
       return <ItemView key={item.imgUrl} item={item} />;
     });
@@ -20,10 +23,10 @@ class ItemListView extends Component {
     return (
       <div>
         <div className="sub_img" onClick={this.handleShow}>
-          이거에요
+          <h1>Subscription Item {item_class}</h1>
         </div>
         <div className={this.state.visible == true ? "show" : "hide"}>
-          <Item.Group>{ItemList}</Item.Group>
+          <div className="sub_wrap">{ItemList}</div>
         </div>
       </div>
     );

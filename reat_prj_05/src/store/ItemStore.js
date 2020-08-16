@@ -7,16 +7,5 @@ class ItemStore {
 
   @observable
   item = {};
-
-  //   @observable
-  //   value = true;
-
-  //   @action
-  //   changeVal = () => {
-  //     this.value = !this.value;
-  //   };
-  //   showDscr = (value) => {
-  //     this.value = !value;
-  //   };
 }
 export default new ItemStore();

@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import './MainImageView.css';
+import React, { Component } from "react";
+import "./MainImageView.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
-class MainImageView  extends Component {
+class MainImageView extends Component {
   constructor() {
     super();
     this.slideRef = React.createRef();
     this.back = this.back.bind(this);
     this.next = this.next.bind(this);
     this.state = {
-      current: 0
+      current: 0,
     };
   }
 
@@ -31,19 +31,20 @@ class MainImageView  extends Component {
       infinite: true,
     };
 
-    const imageList = this.props.imageList.map((image) => { return image.imgUrl});
-    
+    const imageList = this.props.imageList.map((image) => {
+      return image.imgUrl;
+    });
+
     return (
-          <Slide className="slide-container" ref={this.slideRef} {...properties}>
-            {imageList.map((each, index) => (
-              <div key={index} className="each-slide">
-                <img src={each} alt="sample" />
-              </div>
-            ))}
-          </Slide>
+      <Slide className="slide-container" ref={this.slideRef} {...properties}>
+        {imageList.map((each, index) => (
+          <div key={index} className="each-slide">
+            <img className="main_img" src={each} alt="sample" />
+          </div>
+        ))}
+      </Slide>
     );
   }
 }
 
 export default MainImageView;
-
