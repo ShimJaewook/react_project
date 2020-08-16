@@ -1,22 +1,49 @@
 import React, { Component } from 'react'
-// import { Image } from 'semantic-ui-react'
-import { Jumbotron, Container } from 'reactstrap';
+import './MainImageView.css';
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
-class MainImageView extends Component {
+class MainImageView  extends Component {
+  constructor() {
+    super();
+    this.slideRef = React.createRef();
+    this.back = this.back.bind(this);
+    this.next = this.next.bind(this);
+    this.state = {
+      current: 0
+    };
+  }
 
-    render() {
-        return (
-            // <Image src='/src_images/driving_dog.png' width="100%" height="50px"/>
-        
-            <div>
-                <Jumbotron fluid>
-                    <Container fluid>
-                        <img src='/src_images/driving_dog.png' />
-                    </Container>
-                </Jumbotron>
-            </div>
-        )
-    }
+  back() {
+    this.slideRef.current.goBack();
+  }
+
+  next() {
+    this.slideRef.current.goNext();
+  }
+
+  render() {
+    const properties = {
+      duration: 4000,
+      autoplay: true,
+      transitionDuration: 500,
+      arrows: false,
+      infinite: true,
+    };
+
+    const imageList = this.props.imageList.map((image) => { return image.imgUrl});
+    
+    return (
+          <Slide className="slide-container" ref={this.slideRef} {...properties}>
+            {imageList.map((each, index) => (
+              <div key={index} className="each-slide">
+                <img src={each} alt="sample" />
+              </div>
+            ))}
+          </Slide>
+    );
+  }
 }
 
-export default MainImageView
+export default MainImageView;
+
