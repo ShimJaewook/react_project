@@ -24,7 +24,7 @@ class MainImageView extends Component {
 
   render() {
     const properties = {
-      duration: 4000,
+      duration: 5000,
       autoplay: true,
       transitionDuration: 500,
       arrows: false,
