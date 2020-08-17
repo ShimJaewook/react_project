@@ -7,7 +7,7 @@ import ItemDetailView from "./ItemDetailView";
 class ItemListView extends Component {
   state = { visible: true };
 
-  handleShow = (e) => {
+  handleShow = () => {
     this.setState({ visible: !this.state.visible });
   };
 

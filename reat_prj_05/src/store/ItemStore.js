@@ -6,6 +6,19 @@ class ItemStore {
   items = Items;
 
   @observable
-  item = {};
+  item = Items;
+
+  @action
+  filterItem(value) {
+    this.item = this.item.filter((element) => element.category !== value)
+  }
+
+  @action
+  addItem(value) {
+    const item = Items.filter((element) => element.category === value)
+    this.item = this.item.concat(item)
+  }
+
+
 }
 export default new ItemStore();
