@@ -1,4 +1,3 @@
-
 .sub_img {
   width: 800px;
   height: 200px;
@@ -29,4 +28,24 @@
 
 .hide {
   display: block;
+}
+
+.img_wrap {
+  display: inline;
+}
+
+.sub_imgs {
+  padding: 1rem;
+}
+
+.sub_wrap {
+  width: 800px;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.popupButton {
+  background-color: lightskyblue;
+  border: 0;
+  padding: 0;
 }
