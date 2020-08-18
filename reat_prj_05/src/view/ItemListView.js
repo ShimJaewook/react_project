@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import ItemView from "./ItemView";
-import "./ItemView.css";
+// import ItemView from "./ItemView";
+import ItemView_no_btn from "./ItemView";
 
 class ItemListView extends Component {
   state = { visible: true };
@@ -17,7 +17,7 @@ class ItemListView extends Component {
 
     // popup trigger item list
     const itemList = filtered.map((item) => {
-      return <ItemView key={item.id} item={item} />;
+      return <ItemView_no_btn key={item.id} item={item} />;
     });
 
     return (
@@ -25,7 +25,7 @@ class ItemListView extends Component {
         <div className="sub_img" onClick={this.handleShow}>
           <h1>Subscription Item {item_class}</h1>
         </div>
-        <div className={this.state.visible === true ? "show" : "hide"}>
+        <div className={this.state.visible === true ? "hide" : "show"}>
           <div className="sub_wrap">{itemList}</div>
         </div>
       </div>
