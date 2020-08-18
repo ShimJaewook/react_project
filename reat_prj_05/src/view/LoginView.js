@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Form, Button, Input } from "semantic-ui-react";
 import "./LoginView.css";
 import "./HeaderMenu.css";
+import "./DIY_item";
 class LoginView extends Component {
     
     state = {visible1: true,
@@ -26,7 +27,7 @@ class LoginView extends Component {
         })}
         if(e.value===document.getElementById("menu-02").value) {
                
-            const location=document.querySelector("#menu-02").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
+            const location=document.querySelector("#sub_img id").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
             window.scrollTo({
                 //직접 태그의 위치로 스크롤이동
                 top:location - menuHeight,    
