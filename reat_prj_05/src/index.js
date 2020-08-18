@@ -4,12 +4,22 @@ import App from "./App"
 import * as serviceWorker from "./serviceWorker"
 import ItemStore from "./store/ItemStore"
 import MainImageStore from "./store/MainImageStore"
+<<<<<<< HEAD
 import { Provider } from "mobx-react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'semantic-ui-css/semantic.min.css'
+=======
+
+import { Provider } from "mobx-react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserStore from "./store/UserStore";
+
+>>>>>>> e84d0c7e6a7b740710adf980b9ec2c5f30c597cd
 
 ReactDOM.render(
-  <Provider ItemStore={ItemStore} MainImageStore={MainImageStore}>
+  <Provider ItemStore={ItemStore} MainImageStore={MainImageStore}
+   UserStore = {UserStore}>
+  
     <App />
   </Provider>,
   document.getElementById("root")

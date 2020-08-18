@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import ItemDetailView from "./ItemDetailView";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 34d1cc4e82411035dcee09d7a88dcb24546c8288
 import "./ItemView.css";
 import "./ItemView.scss";
 
@@ -25,7 +29,7 @@ class ItemView extends Component {
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
-                장바구니
+                <h1>+</h1>
               </div>
             </div>
           </dlv>
