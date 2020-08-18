@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Checkbox } from "semantic-ui-react"
 import { Grid } from "semantic-ui-react"
 import { inject, observer } from "mobx-react"
 import ItemAllListView from "../view/ItemAllListView"

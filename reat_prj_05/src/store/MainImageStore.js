@@ -1,4 +1,4 @@
-import { observable, action } from "mobx"
+import { observable } from "mobx"
 import MainImages from "../mainImage_data"
 
 class MainImageStore {
