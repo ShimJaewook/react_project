@@ -42,6 +42,7 @@ const Items = [
     imgUrl: "./item_images/bath_dryShampoo.png",
     description: "죽었던 컬이 살아난다! 물없이 샴푸하는 초간편 샴푸",
     category: "bath",
+    class: "B",
   },
   {
     id: 5,
@@ -50,6 +51,7 @@ const Items = [
     imgUrl: "./item_images/food_beefJerky.png",
     description: "고단백 저지방 간식, 고소하고 담백한 소고기 육포",
     category: "food",
+    class: "B",
   },
   {
     id: 6,
@@ -59,6 +61,7 @@ const Items = [
     description:
       "강아지들도 즐길 자격이 있다! 우리만 즐겼던 치킨과 맥주 댕댕이도 즐기면 얼마나 좋게요~?",
     category: "toy",
+    class: "B",
   },
   {
     id: 7,
@@ -67,6 +70,7 @@ const Items = [
     imgUrl: "./item_images/clothes_pooCloth.png",
     description: "흡수력 최강! 귀염 뽀짝! 더블 레이어 극세사 샤워가운 입니다!",
     category: "clothes",
+    class: "B",
   },
   {
     id: 8,
@@ -75,6 +79,7 @@ const Items = [
     imgUrl: "./item_images/accessary_ledLight.png",
     description: "메탈 소재의 튼튼한 카리비너 방식으로 체결된 LED 라이트!",
     category: "accessary",
+    class: "C",
   },
   {
     id: 9,
@@ -84,6 +89,7 @@ const Items = [
     description:
       "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
     category: "clothes",
+    class: "C",
   },
   {
     id: 10,
@@ -92,6 +98,7 @@ const Items = [
     imgUrl: "./item_images/accessary_safeBelt.png",
     description: "길이는 짧아지고 더 튼튼해진 반려견 안전벨트",
     category: "accessary",
+    class: "C",
   },
   {
     id: 11,
@@ -100,6 +107,7 @@ const Items = [
     imgUrl: "./item_images/food_friedChicken.png",
     description: "닭 가슴살과 코코넛이 만나 치느님이 되었어요!",
     category: "food",
+    class: "C",
   },
   {
     id: 12,
@@ -121,9 +129,9 @@ const Items = [
     id: 14,
     name: "반숙 계란 삑삑 토이",
     price: "32000",
-    imgUrl: "./item_images/food_egg.png",
+    imgUrl: "./item_images/toy_egg.png",
     description: "이것은 계란인가 장난감인가, 역대급 기획!",
-    category: "food",
+    category: "toy",
   },
   {
     id: 15,

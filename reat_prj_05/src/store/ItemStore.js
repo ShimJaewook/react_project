@@ -1,22 +1,22 @@
-import { observable, action } from "mobx";
-import Items from "../item_data";
+import { observable, action } from "mobx"
+import Items from "../item_data"
 
 class ItemStore {
   @observable
-  items = Items;
+  items = Items
 
   @observable
-  item = {};
+  item = Items
 
-  //   @observable
-  //   value = true;
+  @action
+  filterItem(value) {
+    this.item = this.item.filter((element) => element.category !== value)
+  }
 
-  //   @action
-  //   changeVal = () => {
-  //     this.value = !this.value;
-  //   };
-  //   showDscr = (value) => {
-  //     this.value = !value;
-  //   };
+  @action
+  addItem(value) {
+    const item = Items.filter((element) => element.category === value)
+    this.item = this.item.concat(item)
+  }
 }
-export default new ItemStore();
+export default new ItemStore()
