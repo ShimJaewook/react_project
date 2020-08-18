@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ItemDetailView from "./ItemDetailView";
-import Popup from "reactjs-popup";
+
 import "./ItemView.css";
 import "./ItemView.scss";
 
@@ -26,7 +26,7 @@ class ItemView extends Component {
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
-                장바구니
+                <h1>+</h1>
               </div>
             </div>
           </dlv>
