@@ -1,3 +1,19 @@
 .selected_items {
   height: 100px;
 }
+
+.check_ {
+  width: 200px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.mainList {
+  width: 1000px;
+  display: inline-flex;
+}
+
+.checkbox {
+  padding: 0.5rem 0;
+}

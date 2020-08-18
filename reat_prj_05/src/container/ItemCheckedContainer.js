@@ -21,49 +21,48 @@ class ItemCheckedContainer extends Component {
 
   onAdd_SelectedItem = (target) => {
     this.props.ItemStore.add_SelectedItem(target);
-    console.log(toJS(this.props.ItemStore.selectItems));
   };
 
   render() {
-    const { item, selectItems } = this.props.ItemStore;
+    const { item } = this.props.ItemStore;
 
     return (
-      <div>
-        <Grid>
-          <Grid.Column width={2}>
-            <CheckedView
-              value="food"
-              filterItem={this.onFilterItem}
-              addItem={this.onAddItem}
-            />
-            <CheckedView
-              value="bath"
-              filterItem={this.onFilterItem}
-              addItem={this.onAddItem}
-            />
-            <CheckedView
-              value="accessary"
-              filterItem={this.onFilterItem}
-              addItem={this.onAddItem}
-            />
-            <CheckedView
-              value="clothes"
-              filterItem={this.onFilterItem}
-              addItem={this.onAddItem}
-            />
-            <CheckedView
-              value="toy"
-              filterItem={this.onFilterItem}
-              addItem={this.onAddItem}
-            />
-          </Grid.Column>
-          <Grid.Column width={8}>
-            <ItemAllListView
-              ItemList={item}
-              onAdd_SelectedItem={this.onAdd_SelectedItem}
-            />
-          </Grid.Column>
-        </Grid>
+      <div className="mainList">
+        <div className="check_">
+          <CheckedView
+            value="food"
+            filterItem={this.onFilterItem}
+            addItem={this.onAddItem}
+          />
+
+          <CheckedView
+            value="bath"
+            filterItem={this.onFilterItem}
+            addItem={this.onAddItem}
+          />
+          <CheckedView
+            value="accessary"
+            filterItem={this.onFilterItem}
+            addItem={this.onAddItem}
+          />
+          <CheckedView
+            value="clothes"
+            filterItem={this.onFilterItem}
+            addItem={this.onAddItem}
+          />
+          <CheckedView
+            value="toy"
+            filterItem={this.onFilterItem}
+            addItem={this.onAddItem}
+          />
+        </div>
+
+        <div className="ItemAllListView">
+          <ItemAllListView
+            ItemList={item}
+            onAdd_SelectedItem={this.onAdd_SelectedItem}
+          />
+        </div>
       </div>
     );
   }

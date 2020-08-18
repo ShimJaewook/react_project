@@ -10,12 +10,9 @@ function App() {
   return (
     <div>
       <LoginContainer />
-
       <MainImageContainer />
-
       <ItemListContainer />
       <ItemAllMain />
-      <Selected_item_Container />
     </div>
   );
 }

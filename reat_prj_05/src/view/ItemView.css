@@ -9,7 +9,8 @@
 }
 
 .sub_check {
-  width: 1200px;
+  /* display: inline-flex; */
+  width: 100%;
   border: 1px solid black;
   border-radius: 10px;
   margin: 0 auto;
