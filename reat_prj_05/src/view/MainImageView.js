@@ -40,7 +40,7 @@ class MainImageView extends Component {
         {imageList.map((each, index) => (
           <div key={index} className="each-slide">
             <img className="main_img" src={each} alt="sample" />
-          </div>
+          </div>  
         ))}
       </Slide>
     );

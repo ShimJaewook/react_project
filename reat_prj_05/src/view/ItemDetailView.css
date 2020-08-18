@@ -1,0 +1,9 @@
+#detail-container {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+}
+
+#detail-image {
+    width: 100%;
+}
