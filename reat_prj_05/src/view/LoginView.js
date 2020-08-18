@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button, Input } from "semantic-ui-react";
 import "./LoginView.css";
+import "./HeaderMenu.css";
 class LoginView extends Component {
     
     state = {visible1: true,
@@ -12,6 +13,43 @@ class LoginView extends Component {
         else if(this.state.visible1===false)
             this.setState({visible2: !this.state.visible2});
     };
+
+    scrollView = (e) => {
+        const menuHeight = document.querySelector(".header_menu");
+        if(e.value===document.getElementById("menu-01").value) {
+           
+            const location=document.querySelector("#menu-01").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
+            window.scrollTo({
+                //직접 태그의 위치로 스크롤이동
+                top:location - menuHeight,    
+                behavior: 'smooth',
+        })}
+        if(e.value===document.getElementById("menu-02").value) {
+               
+            const location=document.querySelector("#menu-02").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
+            window.scrollTo({
+                //직접 태그의 위치로 스크롤이동
+                top:location - menuHeight,    
+                behavior: 'smooth',
+        })}
+        if(e.value===document.getElementById("menu-03").value) {
+               
+            const location=document.querySelector("#menu-03").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
+            window.scrollTo({
+                //직접 태그의 위치로 스크롤이동
+                top:location - menuHeight,    
+                behavior: 'smooth',
+        })}
+        if(e.value===document.getElementById("menu-04").value) {
+               
+            const location=document.querySelector("#menu-04").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
+            window.scrollTo({
+                //직접 태그의 위치로 smooth하게 스크롤이동
+                top:location - menuHeight,    
+                behavior: 'smooth',
+        })}
+    }
+
         
     render() {
         const users = this.props.users;
@@ -22,7 +60,8 @@ class LoginView extends Component {
         }
 
         return (
-            <>
+            <div className="header">
+                <div>
             {console.log(rootUser)}
             {this.state.visible1 &&
                 <Button onClick = {this.changeView}>로그인</Button>
@@ -57,9 +96,49 @@ class LoginView extends Component {
             </Button>
         </div>}
             
-        {!this.state.visible2 && <div> 박민재님 안녕하세요!
+        {!this.state.visible2 && <div className="welcome"> 박민재님 안녕하세요!
         </div>}
-        </>
+        </div>
+        <div class="header_content">
+            <div class="header_menu">
+                <nav>
+                        <a href="#" id="menu-01" onClick=""><span>구독상품</span></a>
+                        <a href="#" id="menu-02" onClick=""><span>나만의 상품보기</span></a>
+                        <a href="#" id="menu-03" onClick=""><span>전체 상품보기</span></a>
+                        <a href="#" id="menu-04" onClick=""><span>상단으로</span></a>
+                </nav>
+            </div>
+            
+            <div class="section-01 scroll">
+
+
+            </div>
+
+            <div class="section-02 scroll">
+
+
+            </div>
+
+
+            <div class="section-03 scroll">
+
+
+            </div>
+
+            
+            <div class="section-04 scroll">
+
+
+            </div>
+        </div>
+                
+
+
+
+            </div>
+
+
+
         );
     }
 }

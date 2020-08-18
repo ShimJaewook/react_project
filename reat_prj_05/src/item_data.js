@@ -129,9 +129,9 @@ const Items = [
     id: 14,
     name: "반숙 계란 삑삑 토이",
     price: "32000",
-    imgUrl: "./item_images/food_egg.png",
+    imgUrl: "./item_images/toy_egg.png",
     description: "이것은 계란인가 장난감인가, 역대급 기획!",
-    category: "food",
+    category: "toy",
   },
   {
     id: 15,
