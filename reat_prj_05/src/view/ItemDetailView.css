@@ -1,50 +1,10 @@
-/* * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+.modal {
+    top: unset !important;
+    left: unset !important;
+    height: fit-content !important;
+    width: fit-content !important;
 }
 
-#detail-container {
-    width: 700px;
-    height: 600px;
-    overflow: hidden;
-    background-color: red;
+.detail-content {
     margin: 20px auto;
-}
-
-.detail-title {
-    color: #727272 !important;
-    font-size: large !important;
-    vertical-align: middle !important;
-}
-
-.detail-image {
-    vertical-align: middle;
-    height: 450px;
-    width: 450px;
-}
-
-.hash-tag {
-    background-color: #93ee5e !important;
-}
-
-.detail-content {
-    margin-top: 20px !important;
-}
-
-.item-description {
-    text-align: left;
-}
-
-.item-extra {
-    text-align: left;
-} */
-
-/* div { */
-.detail-content {
-    overflow-y: scroll !important;
 } 
-
-.detail-image {   
-    width: 100%;
-    height: fit-content;
-    overflow-y: scroll !important; 
-}   

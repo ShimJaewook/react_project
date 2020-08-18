@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import ItemDetailView from "./ItemDetailView";
-import Popup from "reactjs-popup";
 import "./ItemView.css";
 import "./ItemView.scss";
 
@@ -22,7 +21,7 @@ class ItemView extends Component {
         <div className={this.state.mouse === true ? "float_btn" : "hide"}>
           <dlv className="ul">
             <div>
-              <ItemDetailView />
+              <ItemDetailView item={item}/>
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
