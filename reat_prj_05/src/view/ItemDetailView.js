@@ -22,6 +22,25 @@ class ItemDetailView extends Component {
     };
   }
 
+<<<<<<< HEAD
+    render() {
+        
+        // const {item} = this.props;
+
+        return (
+            <Modal className="modal"
+                onClose={() => this.setState({open:false})}
+                onOpen={() => this.setState({open:true})}
+                open={this.state.open}
+                trigger={<Button className="btn">상세보기</Button>}
+                >   
+                <Modal.Content scrolling className="detail-content">
+                    <Image size="large" src = {this.props.item.detailUrl} wrapped/>
+                </Modal.Content>
+            </Modal>
+        )
+    }
+=======
   render() {
     const { item } = this.props;
     return (
@@ -62,6 +81,7 @@ class ItemDetailView extends Component {
       </Modal>
     );
   }
+>>>>>>> 34d1cc4e82411035dcee09d7a88dcb24546c8288
 }
 
 export default ItemDetailView;

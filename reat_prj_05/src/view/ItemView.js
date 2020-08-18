@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ItemDetailView from "./ItemDetailView";
+<<<<<<< HEAD
+=======
 
+>>>>>>> 34d1cc4e82411035dcee09d7a88dcb24546c8288
 import "./ItemView.css";
 import "./ItemView.scss";
 
@@ -22,7 +25,7 @@ class ItemView extends Component {
         <div className={this.state.mouse === true ? "float_btn" : "hide"}>
           <dlv className="ul">
             <div>
-              <ItemDetailView />
+              <ItemDetailView item={item}/>
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>

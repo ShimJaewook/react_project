@@ -17,6 +17,7 @@ const Items = [
     description: "다이어트와 변비에 좋은 비타민A가 가득한 펌킨쿠키",
     category: "food",
     class: "A",
+    detailUrl: "./item_images/food_pumkinCookie_detail.png",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const Items = [
     description: "1만 개의 부드러운 칫솔모로 구석구석 깨끗하게",
     category: "bath",
     class: "A",
+    detailUrl: "./item_images/bath_toothbrush_detail.png",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const Items = [
     description: "국산 고구마로 만든 고담백 간식 말랑 고구마",
     category: "food",
     class: "A",
+    detailUrl: "./item_images/food_sweetPotato_detail.png",
   },
   {
     id: 4,
@@ -44,6 +47,7 @@ const Items = [
     description: "죽었던 컬이 살아난다! 물없이 샴푸하는 초간편 샴푸",
     category: "bath",
     class: "B",
+    detailUrl: "./item_images/bath_dryShampoo_detail.png",
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const Items = [
     description: "고단백 저지방 간식, 고소하고 담백한 소고기 육포",
     category: "food",
     class: "B",
+    detailUrl: "./item_images/food_beefJerky_detail.png",
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ const Items = [
       "강아지들도 즐길 자격이 있다! 우리만 즐겼던 치킨과 맥주 댕댕이도 즐기면 얼마나 좋게요~?",
     category: "toy",
     class: "B",
+    detailUrl: "./item_images/toy_chickenBeer_detail.png",
   },
   {
     id: 7,
@@ -72,6 +78,7 @@ const Items = [
     description: "흡수력 최강! 귀염 뽀짝! 더블 레이어 극세사 샤워가운 입니다!",
     category: "clothes",
     class: "B",
+    detailUrl: "./item_images/clothes_pooCloth_detail.png",
   },
   {
     id: 8,
@@ -81,6 +88,7 @@ const Items = [
     description: "메탈 소재의 튼튼한 카리비너 방식으로 체결된 LED 라이트!",
     category: "accessary",
     class: "C",
+    detailUrl: "./item_images/accessary_ledLight_detail.png",
   },
   {
     id: 9,
@@ -91,6 +99,7 @@ const Items = [
       "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
     category: "clothes",
     class: "C",
+    detailUrl: "./item_images/clothes_pigletCloth_detail.png",
   },
   {
     id: 10,
@@ -100,6 +109,7 @@ const Items = [
     description: "길이는 짧아지고 더 튼튼해진 반려견 안전벨트",
     category: "accessary",
     class: "C",
+    detailUrl: "./item_images/accessary_safeBelt_detail.png",
   },
   {
     id: 11,
@@ -109,6 +119,7 @@ const Items = [
     description: "닭 가슴살과 코코넛이 만나 치느님이 되었어요!",
     category: "food",
     class: "C",
+    detailUrl: "./item_images/food_friedChicken_detail.png",
   },
   {
     id: 12,
@@ -117,6 +128,7 @@ const Items = [
     imgUrl: "./item_images/food_gimbab.png",
     description: "영양이 한줄에 가득한 고단백 프리미엄 김밥!",
     category: "food",
+    detailUrl: "./item_images/food_gimbab_detail.png",
   },
   {
     id: 13,
@@ -125,6 +137,7 @@ const Items = [
     imgUrl: "./item_images/food_blueberryIceCream.png",
     description: "시원하게 즐기는 새콤달콤 블루베리 아이스크림",
     category: "food",
+    detailUrl: "./item_images/food_blueberryIceCream_detail.png",
   },
   {
     id: 14,
@@ -133,6 +146,7 @@ const Items = [
     imgUrl: "./item_images/toy_egg.png",
     description: "이것은 계란인가 장난감인가, 역대급 기획!",
     category: "toy",
+    detailUrl: "./item_images/toy_egg_detail.png",
   },
   {
     id: 15,
@@ -141,6 +155,7 @@ const Items = [
     imgUrl: "./item_images/bath_cream.png",
     description: "손상되고 건조한 피부에 빠른 회복이 필요할 때 필수 아이템",
     category: "bath",
+    detailUrl: "./item_images/bath_cream_detail.png",
   },
 ];
 
