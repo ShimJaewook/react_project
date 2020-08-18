@@ -5,16 +5,19 @@ import "./ItemView.css";
 import "./Selected_itemView.scss";
 
 class ItemView_no_btn extends Component {
-  state = { quantity: 1 };
+  state = { quantity: 1, total_price: 0 };
 
   onAdd = () => {
-    this.setState({ quantity: this.state.quantity + 1 });
+    this.setState(
+      { quantity: this.state.quantity + 1 },
+      { price: this.state.quantity * this.props.item.price }
+    );
   };
 
   onDelete = () => {
     if (this.state.quantity < 0) {
       {
-        this.setState({ quantity: "" });
+        this.setState({ quantity: 1 });
       }
     }
     this.setState({ quantity: this.state.quantity - 1 });
@@ -32,9 +35,9 @@ class ItemView_no_btn extends Component {
           height="200px"
           onMouseEnter={() => this.setState({ mouse: !this.state.mouse })}
         />
-        <div>
+        <div className="cart_info">
           <span>
-            <h3>{item.name}</h3>
+            <h2>{item.name}</h2>
             <h3>가격: {price}</h3>
             <h3>수량: </h3>
             <button onClick={this.onDelete}>-</button>

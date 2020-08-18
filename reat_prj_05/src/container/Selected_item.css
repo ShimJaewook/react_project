@@ -3,17 +3,31 @@
 }
 
 .check_ {
+  padding-left: 2rem;
+  position: absolute;
   width: 200px;
   height: 500px;
   margin: auto;
-  text-align: center;
+  text-align: left;
+  left: 20px;
 }
 
 .mainList {
-  width: 1000px;
+  width: 900px;
+  margin: auto;
   display: inline-flex;
 }
 
 .checkbox {
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.item_label {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  background-color: rgb(36, 117, 36);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
 }

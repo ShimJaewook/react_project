@@ -31,7 +31,7 @@ class ItemDetailView extends Component {
         onClose={() => this.setState({ open: false })}
         onOpen={() => this.setState({ open: true })}
         open={this.state.open}
-        trigger={<Button className="btn">상세보기</Button>}
+        trigger={<Button className="btn">🔎</Button>}
       >
         <Modal.Content scrolling className="detail-content">
           <Image size="large" src={this.props.item.detailUrl} wrapped />

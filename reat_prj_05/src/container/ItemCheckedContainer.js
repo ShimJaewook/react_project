@@ -29,6 +29,7 @@ class ItemCheckedContainer extends Component {
     return (
       <div className="mainList">
         <div className="check_">
+          <div className="item_label">아이템 선택하기</div>
           <CheckedView
             value="food"
             filterItem={this.onFilterItem}
