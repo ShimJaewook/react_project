@@ -13,8 +13,6 @@ class ItemListView extends Component {
 
   render() {
     const item_class = this.props.item_class;
-    // console.log(item_class);
-
     const filtered = this.props.ItemList.filter(
       (Item) => Item.class === item_class
     );
@@ -44,7 +42,6 @@ class ItemListView extends Component {
         <div className={this.state.visible === true ? "show" : "hide"}>
           <div className="sub_wrap">{itemList}</div>
         </div>
-        
       </div>
     );
   }

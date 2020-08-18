@@ -34,6 +34,10 @@
   display: inline;
 }
 
+.img_wrap:hover {
+  cursor: pointer;
+}
+
 .sub_imgs {
   padding: 1rem;
 }
