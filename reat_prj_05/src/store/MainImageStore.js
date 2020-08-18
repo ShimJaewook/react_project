@@ -1,12 +1,12 @@
-import { observable, action } from "mobx";
-import MainImages from "../mainImage_data";
+import { observable, action } from "mobx"
+import MainImages from "../mainImage_data"
 
 class MainImageStore {
-    @observable
-    mainImages = MainImages;
+  @observable
+  mainImages = MainImages
 
-    @observable
-    mainImage = {};
+  @observable
+  mainImage = {}
 }
 
-export default new MainImageStore();
+export default new MainImageStore()

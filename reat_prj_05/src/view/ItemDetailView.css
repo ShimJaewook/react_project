@@ -1,9 +1,14 @@
 #detail-container {
-    width: 500px;
+    width: 700px;
     height: 600px;
     overflow: hidden;
+    background-color: red;
+    margin: 0 auto;
 }
 
-#detail-image {
-    width: 100%;
+
+.detail-image {
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
 }
