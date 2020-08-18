@@ -1,7 +1,7 @@
 const Users = [
     {
-    id: 'user',
-    password: 'user'
+        id: 'user',
+        password: 'user'
     }
 ]
 

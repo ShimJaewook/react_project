@@ -1,15 +1,18 @@
 import React, { Component } from "react";
-import { Item } from "semantic-ui-react";
-import { Grid, Image } from "semantic-ui-react";
+// import { Item } from "semantic-ui-react";
+// import { Grid, Image } from "semantic-ui-react";
 
 class ItemView extends Component {
   render() {
     const { item } = this.props;
     return (
-      <div>
-        <div width="200px">
-          <Image src={item.imgUrl} width="200px" height="200px" />
-        </div>
+      <div className="img_wrap">
+        <img
+          className="sub_imgs"
+          src={item.imgUrl}
+          width="200px"
+          height="200px"
+        />
 
         {/* <div className>
           <Item>

@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import ItemStore from "./store/ItemStore";
+import MainImageStore from "./store/MainImageStore"
 import { Provider } from "mobx-react";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserStore from "./store/UserStore";
 ReactDOM.render(
-  <Provider ItemStore={ItemStore}>
+  <Provider ItemStore={ItemStore} MainImageStore={MainImageStore}
+   UserStore = {UserStore}>
+  
     <App />
   </Provider>,
   document.getElementById("root")

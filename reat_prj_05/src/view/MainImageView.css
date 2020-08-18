@@ -1,0 +1,9 @@
+.slide-container {
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.main_img {
+  width: 100%;
+  height: 400px;
+}
