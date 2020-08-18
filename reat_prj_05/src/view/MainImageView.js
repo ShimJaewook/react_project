@@ -26,8 +26,8 @@ class MainImageView extends Component {
     const properties = {
       duration: 5000,
       autoplay: true,
-      transitionDuration: 500,
-      arrows: false,
+      transitionDuration: 600,
+      arrows: true,
       infinite: true,
     };
 
