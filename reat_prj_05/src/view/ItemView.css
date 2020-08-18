@@ -32,6 +32,7 @@
 
 .img_wrap {
   display: inline;
+  overflow-y: scroll;
 }
 
 .sub_imgs {
@@ -48,4 +49,8 @@
   background-color: lightskyblue;
   border: 0;
   padding: 0;
+}
+
+.modal {
+  overflow-y: scroll;
 }

@@ -6,6 +6,8 @@ import ItemStore from "./store/ItemStore"
 import MainImageStore from "./store/MainImageStore"
 import { Provider } from "mobx-react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import 'semantic-ui-css/semantic.min.css'
+
 ReactDOM.render(
   <Provider ItemStore={ItemStore} MainImageStore={MainImageStore}>
     <App />
