@@ -8,6 +8,8 @@ import ItemAllMain from "./view/menu/ItemAllMain";
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
 
+import Selected_item_Container from "./container/Selected_item_Container";
+
 function App() {
   return (
     <div>
@@ -20,6 +22,7 @@ function App() {
 
       <ItemListContainer />
       <ItemAllMain />
+      <Selected_item_Container />
     </div>
   );
 }

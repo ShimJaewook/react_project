@@ -7,6 +7,7 @@ const Items = [
     description: "노즈워크를 위한 장난감입니다.",
     category: "toy",
     class: "A",
+    detailUrl: "./item_images/toy_sandCastle_detail.png"
   },
   {
     id: 1,

@@ -22,13 +22,7 @@ class ItemView extends Component {
         <div className={this.state.mouse === true ? "float_btn" : "hide"}>
           <dlv className="ul">
             <div>
-              <Popup
-                trigger={<button className="popupButton btn">상세보기</button>}
-                modal
-                closeOnDocumentClick
-              >
-                <ItemDetailView item={item} />
-              </Popup>
+              <ItemDetailView />
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>

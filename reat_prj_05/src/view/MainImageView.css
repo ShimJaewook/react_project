@@ -1,6 +1,13 @@
 .slide-container {
   height: fit-content;
-  margin: 0 auto;
+  margin: 80px auto;
+  
+}
+
+.detail-title {
+  
+  /* height: 30px;
+  line-height: 30px; */
 }
 
 .main_img {
