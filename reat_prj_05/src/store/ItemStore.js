@@ -8,23 +8,29 @@ class ItemStore {
   @observable
   item = Items;
 
+<<<<<<< HEAD
   @observable
   label = "all";
 
   @observable
   selectItems = [];
 
+=======
+>>>>>>> ffb6a0bf2807f18d7f4c33954798fa63de34fdc9
   @action
   filterItem(value) {
     this.item = this.item.filter((element) => element.category !== value);
   }
 
   @action
+<<<<<<< HEAD
   changeLabel(value) {
     const label = this.value;
     this.setState({ label: value });
   }
   @action
+=======
+>>>>>>> ffb6a0bf2807f18d7f4c33954798fa63de34fdc9
   selectItem(label) {
     this.item = this.items.filter((ele) => ele.category === label);
   }

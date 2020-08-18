@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import { Checkbox } from "semantic-ui-react";
 import { Grid } from "semantic-ui-react";
@@ -6,6 +7,13 @@ import { inject, observer } from "mobx-react";
 import ItemAllListView from "../view/ItemAllListView";
 import CheckedView from "../view/CheckedView";
 import Selected_item from "../view/Selected_item";
+=======
+import React, { Component } from "react"
+import { Grid } from "semantic-ui-react"
+import { inject, observer } from "mobx-react"
+import ItemAllListView from "../view/ItemAllListView"
+import CheckedView from "../view/CheckedView"
+>>>>>>> ffb6a0bf2807f18d7f4c33954798fa63de34fdc9
 
 @inject("ItemStore")
 @observer
