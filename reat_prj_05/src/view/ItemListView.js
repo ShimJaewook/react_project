@@ -19,15 +19,21 @@ class ItemListView extends Component {
       (Item) => Item.class === item_class
     );
 
-
     // popup trigger item list
     const itemList = filtered.map((item) => {
-      return <Popup trigger={
-        <button className="popupButton">
-          <ItemView key={item.imgUrl} item={item} />
-        </button>} modal closeOnDocumentClick>
-        <ItemDetailView item={item} />
-      </Popup>
+      return (
+        <Popup
+          trigger={
+            <button className="popupButton">
+              <ItemView key={item.imgUrl} item={item} />
+            </button>
+          }
+          modal
+          closeOnDocumentClick
+        >
+          <ItemDetailView item={item} />
+        </Popup>
+      );
     });
 
     return (
