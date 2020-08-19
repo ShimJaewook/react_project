@@ -52,6 +52,14 @@
 .sub_imgs:hover {
   background: black;
 }
+.info_imgs {
+  padding: 1rem;
+
+  z-index: -999;
+}
+.info_imgs:hover {
+  background: #dddddd;
+}
 
 .sub_wrap {
   width: 800px;
