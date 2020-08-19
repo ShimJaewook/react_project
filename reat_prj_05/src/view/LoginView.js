@@ -70,7 +70,9 @@ class LoginView extends Component {
           <div class="header_menu">
             <div className="logo">
               <img src="/logo_image/LOGO.png" />
-              <h1> 멍토피아</h1>
+              <a href="#">
+                <h1> 멍토피아</h1>
+              </a>
             </div>
             <ul class="liMenu">
               <li>
@@ -81,7 +83,7 @@ class LoginView extends Component {
               <li>
                 <a
                   onClick={() => this.props.changeState("home")}
-                  href="#subscription item id"
+                  href="#subscription_point"
                   id="menu-01"
                 >
                   <span>구독상품</span>

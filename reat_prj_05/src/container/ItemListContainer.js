@@ -7,9 +7,14 @@ import { Button } from "semantic-ui-react";
 import MiddleContentContainer from "./MiddleContentContainer";
 
 @inject("ItemStore")
+@inject("StateStore")
 @observer
 class ItemListContainer extends Component {
   //클릭함수 구현
+
+  changeState = (state) => {
+        this.props.StateStore.setState(state);
+  }
 
   render() {
     const { items } = this.props.ItemStore;
@@ -41,8 +46,8 @@ class ItemListContainer extends Component {
             {/* <DIY_item /> */}
 
             <div className="btn">
-              <Button inverted color="orange">
-                정기구독 시작하기
+              <Button onClick={() => this.changeState("allItem")} inverted color="orange">
+                <a href="#">나만의 상품으로 구독하기</a>
               </Button>
             </div>
           </div>

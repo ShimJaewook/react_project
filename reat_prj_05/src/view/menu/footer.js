@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./footer.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { Component } from "react"
+import "./footer.scss"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 class Footer extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = {};
+    this.state = {}
   }
 
   render() {
@@ -39,15 +39,12 @@ class Footer extends Component {
             <h4>주소: 서울특별시 강남구 테헤란로 212 501호</h4>
             <h4>이메일: 123@gmail.com</h4>
             <br></br>
-            <span>
-              대표젼화: 1522-6553 (마케팅 제휴 관련은 이메일을 통해 문의주시기
-              바랍니다.)
-            </span>
+            <span>대표젼화: 1522-6553 (마케팅 제휴 관련은 이메일을 통해 문의주시기 바랍니다.)</span>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer
