@@ -43,15 +43,17 @@
 import React, { Component } from 'react';
 import LoginView from "../view/LoginView";
 import { inject, observer } from "mobx-react";
+import LoginModalView from "../view/LoginModalView";
+
 @inject('UserStore')
 @observer
-
 class LoginContainer extends Component {
     render() {
         const {users} = this.props.UserStore;
         return (
             <div>
                 <LoginView users={users}/>
+                <LoginModalView users={users}/>
             </div>
         );
     }

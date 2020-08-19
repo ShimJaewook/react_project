@@ -11,7 +11,7 @@ class ItemStore {
   item = Items;
 
   @observable
-  label = "all";
+  total_price = 0;
 
   @observable
   selectItems = [];

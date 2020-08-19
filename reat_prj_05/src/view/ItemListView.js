@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-// import ItemView from "./ItemView";
 import ItemView_no_btn from "./ItemView";
+import "./ItemView.scss";
 
 class ItemListView extends Component {
   state = { visible: true };

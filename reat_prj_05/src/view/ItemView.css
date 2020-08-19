@@ -8,23 +8,12 @@
   text-align: center;
 }
 
-.sub_check {
-  /* display: inline-flex; */
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 0 auto;
-  margin-top: 5rem;
-  text-align: center;
-}
-
 .sub_img h1 {
   justify-content: center;
   padding-top: 5rem;
 }
 .show {
   display: block;
-  /* width: 800px; */
 }
 
 .hide {
@@ -39,14 +28,10 @@
   overflow: hidden;
 }
 
-/* .img_wrap:hover {
-  cursor: pointer;
-} */
-
 .sub_imgs {
   padding: 1rem;
   position: absolute;
-
+  border-radius: 15%;
   z-index: -999;
 }
 .sub_imgs:hover {
@@ -56,8 +41,6 @@
 .sub_wrap {
   width: 800px;
   margin: auto;
-
-  /* border: 1px solid black; */
 }
 
 .popupButton {

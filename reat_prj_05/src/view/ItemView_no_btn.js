@@ -1,17 +1,13 @@
 import React, { Component } from "react";
-import ItemDetailView from "./ItemDetailView";
-import Popup from "reactjs-popup";
 import "./ItemView.css";
 import "./Selected_itemView.scss";
 
 class ItemView_no_btn extends Component {
-  state = { quantity: 1, total_price: 0 };
+  state = { quantity: 1 };
 
-  onAdd = () => {
-    this.setState(
-      { quantity: this.state.quantity + 1 },
-      { price: this.state.quantity * this.props.item.price }
-    );
+  onAdd = (price) => {
+    this.setState({ quantity: this.state.quantity + 1 });
+    // this.setState({ total_price: this.state.total_price + price });
   };
 
   onDelete = () => {
@@ -26,6 +22,7 @@ class ItemView_no_btn extends Component {
   render() {
     const { item } = this.props;
     const price = item.price * this.state.quantity;
+
     return (
       <div className="cart_wrap">
         <img
@@ -42,7 +39,7 @@ class ItemView_no_btn extends Component {
             <h3>수량: </h3>
             <button onClick={this.onDelete}>-</button>
             {this.state.quantity}
-            <button onClick={this.onAdd}>+</button>
+            <button onClick={() => this.onAdd(price)}>+</button>
           </span>
         </div>
       </div>
