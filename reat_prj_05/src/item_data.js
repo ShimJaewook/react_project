@@ -104,7 +104,8 @@ const Items = [
     name: "피글렛 극세사 샤워 가운",
     price: 42000,
     imgUrl: "./item_images/clothes_pigletCloth.png",
-    description: "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
+    description:
+      "일반 극세사 가운이 아닌 흡수력을 강화한 더블 레이어 극세사 샤워가운!",
     category: "clothes",
     class: "C",
     detailUrl: "./item_images/clothes_pigletCloth_detail.png",
@@ -208,7 +209,8 @@ const Items = [
     name: "로즈제라늄 아웃도어 스프레이",
     price: 7500,
     imgUrl: "./item_images/bath_outdoorSpray.png",
-    description: "동물에겐 좋은 향이지만 진드기는 기피하는 로즈제라늄 아웃도어 스프레이!",
+    description:
+      "동물에겐 좋은 향이지만 진드기는 기피하는 로즈제라늄 아웃도어 스프레이!",
     category: "bath",
     detailUrl: "./item_images/bath_outdoorSpray_detail.png",
     quantity: 1,
@@ -223,6 +225,6 @@ const Items = [
     detailUrl: "./item_images/clothes_waterproof_detail.png",
     quantity: 1,
   },
-]
+];
 
-export default Items
+export default Items;

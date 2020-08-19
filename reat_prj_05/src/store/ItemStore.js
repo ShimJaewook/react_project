@@ -2,11 +2,9 @@ import { observable, action, toJS } from "mobx"
 import Items from "../item_data"
 
 class ItemStore {
-  
   @observable
   items = Items
 
-  
   @observable
   item = Items
 
@@ -22,17 +20,18 @@ class ItemStore {
   @action
   filterItem(value) {
     this.item = this.item.filter((element) => element.category !== value)
-  }
-
-  @action
-  selectItem(label) {
-    this.item = this.items.filter((ele) => ele.category === label)
+    this.item = this.item.sort(function (a, b) {
+      return a.id - b.id
+    })
   }
 
   @action
   addItem(value) {
     const item = Items.filter((element) => element.category === value)
     this.item = this.item.concat(item)
+    this.item = this.item.sort(function (a, b) {
+      return a.id - b.id
+    })
   }
 
   @action
@@ -62,13 +61,6 @@ class ItemStore {
   @action
   removeItem(e) {
     this.selectItems = this.selectItems.filter((element) => element.id !== e.id)
-    // const index = this.selectItems.findIndex((element) => element.id === id)
-    // console.log(index)
-    // console.log(this.selectItems.length)
-    // this.selectItems = [
-    //   ...this.selectItems.slice(0, index),
-    //   ...this.selectItems.slice(index + 1, this.selectItems.length),
-    // ]
   }
 }
 export default new ItemStore()
