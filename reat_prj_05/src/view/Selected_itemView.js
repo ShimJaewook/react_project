@@ -4,13 +4,11 @@ import ItemView_no_btn from "./ItemView_no_btn";
 import "./Selected_itemView.scss";
 
 class Selected_itemView extends Component {
-  // state = { total_price: 0 };
-
   render() {
     const selectItems = this.props;
     const { onAddPrice, onReducePrice, onRemoveItem } = this.props;
     const items = toJS(selectItems).selectItems;
-    //onRemoveItem={onRemoveItem}
+
     return (
       <div className="sp_cart">
         {items.map((item) => {
