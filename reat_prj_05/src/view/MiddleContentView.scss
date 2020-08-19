@@ -1,0 +1,61 @@
+@font-face { 
+     font-family: "NanumGothic";  
+     src:url("./font/NanumGothic.ttf") format("truetype");
+     font-style:normal;  
+     font-weight:normal; 
+}     
+
+@font-face { 
+     font-family: "BMHANNAAir";  
+     src:url("./font/BMHANNAAir_ttf.ttf") format("truetype");
+     font-style:normal;  
+     font-weight:normal; 
+}     
+
+* {
+    font-family: "BMHANNAAir","NanumGothic", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    color : #ffffff !important;
+}
+
+.main-container {
+    align-content: center !important;
+    width: 100%;
+    height: 450px;
+    margin: 10px 0 !important;
+    padding: 50px 100px !important;
+    background-color: #95d8ff;
+    vertical-align: middle !important;
+}
+
+.content {
+    font-family: "BMHANNAAir", "NanumGothic";
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 20px;;
+    padding: 30px 25px;
+    height: 230px !important;
+    overflow: hidden;
+}
+
+.content-header {
+    color : #3aa1dd !important;
+    font-weight: bold;
+}
+
+.content-body {
+    padding: 10px 40px;
+    line-height: 20px;
+    margin: 0 auto;
+    font-size: 15px;
+    p {
+        display: inline;
+        font-weight: bold;
+        color: #3aa1dd;
+    }
+}
