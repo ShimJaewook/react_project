@@ -17,6 +17,7 @@ class Footer extends Component {
             <div className="logo">
               <img src="/logo_image/LOGO.png"></img>
             </div>
+            <h2>멍토피아</h2>
             <span className="menu">
               <h3>
                 <a href="#">회사소개</a>
