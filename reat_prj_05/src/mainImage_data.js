@@ -10,6 +10,10 @@ const MainImages = [
     {
         id: 3,
         imgUrl: "./main_images/sample3.png"
+    },
+    {
+        id: 4,
+        imgUrl: "./main_images/swimming_dog.png"
     }
 ]
 
