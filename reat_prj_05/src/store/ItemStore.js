@@ -37,7 +37,8 @@ class ItemStore {
   add_SelectedItem(ele) {
     if (this.selectItems.indexOf(ele) == -1) {
       this.selectItems = this.selectItems.concat(ele)
-      this.addPrice(ele.price)
+      this.total_price = this.total_price + ele.price
+      ele.quantity = 1
     }
 
     // this.selectItems = toJS(this.selectItems);
@@ -45,18 +46,20 @@ class ItemStore {
   }
 
   @action
-  addPrice(p) {
-    this.total_price = this.total_price + p
+  addPrice(e) {
+    this.total_price = this.total_price + e.price
+    e.quantity = e.quantity + 1
   }
 
   @action
-  reducePrice(p) {
-    this.total_price = this.total_price - p
+  reducePrice(e) {
+    this.total_price = this.total_price - e.price
+    e.quantity = e.quantity - 1
   }
 
   @action
-  removeItem(id) {
-    this.selectItems = this.selectItems.filter((element) => element.id !== id)
+  removeItem(e) {
+    this.selectItems = this.selectItems.filter((element) => element.id !== e.id)
     // const index = this.selectItems.findIndex((element) => element.id === id)
     // console.log(index)
     // console.log(this.selectItems.length)

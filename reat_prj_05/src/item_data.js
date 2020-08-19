@@ -8,6 +8,7 @@ const Items = [
     category: "toy",
     class: "A",
     detailUrl: "./item_images/toy_sandCastle_detail.png",
+    quantity: 1,
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ const Items = [
     category: "food",
     class: "A",
     detailUrl: "./item_images/food_pumkinCookie_detail.png",
+    quantity: 1,
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const Items = [
     category: "bath",
     class: "A",
     detailUrl: "./item_images/bath_toothbrush_detail.png",
+    quantity: 1,
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ const Items = [
     category: "food",
     class: "A",
     detailUrl: "./item_images/food_sweetPotato_detail.png",
+    quantity: 1,
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ const Items = [
     category: "bath",
     class: "B",
     detailUrl: "./item_images/bath_dryShampoo_detail.png",
+    quantity: 1,
   },
   {
     id: 5,
@@ -58,6 +63,7 @@ const Items = [
     category: "food",
     class: "B",
     detailUrl: "./item_images/food_beefJerky_detail.png",
+    quantity: 1,
   },
   {
     id: 6,
@@ -69,6 +75,7 @@ const Items = [
     category: "toy",
     class: "B",
     detailUrl: "./item_images/toy_chickenBeer_detail.png",
+    quantity: 1,
   },
   {
     id: 7,
@@ -79,6 +86,7 @@ const Items = [
     category: "clothes",
     class: "B",
     detailUrl: "./item_images/clothes_pooCloth_detail.png",
+    quantity: 1,
   },
   {
     id: 8,
@@ -89,6 +97,7 @@ const Items = [
     category: "accessary",
     class: "C",
     detailUrl: "./item_images/accessary_ledLight_detail.png",
+    quantity: 1,
   },
   {
     id: 9,
@@ -99,6 +108,7 @@ const Items = [
     category: "clothes",
     class: "C",
     detailUrl: "./item_images/clothes_pigletCloth_detail.png",
+    quantity: 1,
   },
   {
     id: 10,
@@ -109,6 +119,7 @@ const Items = [
     category: "accessary",
     class: "C",
     detailUrl: "./item_images/accessary_safeBelt_detail.png",
+    quantity: 1,
   },
   {
     id: 11,
@@ -119,6 +130,7 @@ const Items = [
     category: "food",
     class: "C",
     detailUrl: "./item_images/food_friedChicken_detail.png",
+    quantity: 1,
   },
   {
     id: 12,
@@ -128,6 +140,7 @@ const Items = [
     description: "영양이 한줄에 가득한 고단백 프리미엄 김밥!",
     category: "food",
     detailUrl: "./item_images/food_gimbab_detail.png",
+    quantity: 1,
   },
   {
     id: 13,
@@ -137,6 +150,7 @@ const Items = [
     description: "시원하게 즐기는 새콤달콤 블루베리 아이스크림",
     category: "food",
     detailUrl: "./item_images/food_blueberryIceCream_detail.png",
+    quantity: 1,
   },
   {
     id: 14,
@@ -146,6 +160,7 @@ const Items = [
     description: "이것은 계란인가 장난감인가, 역대급 기획!",
     category: "toy",
     detailUrl: "./item_images/toy_egg_detail.png",
+    quantity: 1,
   },
   {
     id: 15,
@@ -155,6 +170,7 @@ const Items = [
     description: "손상되고 건조한 피부에 빠른 회복이 필요할 때 필수 아이템",
     category: "bath",
     detailUrl: "./item_images/bath_cream_detail.png",
+    quantity: 1,
   },
   {
     id: 16,
@@ -164,6 +180,7 @@ const Items = [
     description: "건강한 단백질로 가득찬 살코기, 단백한 닭가슴살 육포",
     category: "food",
     detailUrl: "./item_images/food_chickenBreast_detail.png",
+    quantity: 1,
   },
   {
     id: 17,
@@ -173,6 +190,7 @@ const Items = [
     description: "먼지괴물 물리칠 용감한 멍멍이들 모여라!",
     category: "toy",
     detailUrl: "./item_images/toy_dustMonster_detail.png",
+    quantity: 1,
   },
   {
     id: 18,
@@ -183,6 +201,7 @@ const Items = [
       "낯선사람을 무서워하거나, 컨디션이 좋지 않아 만지는 것을 싫어하는 아이들에게 어울리는 펫티켓 아이템",
     category: "accessary",
     detailUrl: "./item_images/accessary_noSign_detail.png",
+    quantity: 1,
   },
   {
     id: 19,
@@ -192,6 +211,7 @@ const Items = [
     description: "동물에겐 좋은 향이지만 진드기는 기피하는 로즈제라늄 아웃도어 스프레이!",
     category: "bath",
     detailUrl: "./item_images/bath_outdoorSpray_detail.png",
+    quantity: 1,
   },
   {
     id: 20,
@@ -201,6 +221,7 @@ const Items = [
     description: "비가오나 눈이오나 누구도 내 산책을 막을 수 없어!",
     category: "clothes",
     detailUrl: "./item_images/clothes_waterproof_detail.png",
+    quantity: 1,
   },
 ]
 

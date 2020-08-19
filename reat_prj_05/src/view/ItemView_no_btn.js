@@ -5,19 +5,17 @@ import "./ItemView.css"
 import "./Selected_itemView.scss"
 
 class ItemView_no_btn extends Component {
-  state = { quantity: 1 }
-
   onAddPrice = (e) => {
-    this.setState({ quantity: this.state.quantity + 1 })
+    //this.setState({ quantity: this.state.quantity + 1 })
     this.props.onAddPrice(e)
   }
 
   onDelete = (e) => {
-    if (this.state.quantity == 1) {
-      this.props.onRemoveItem(e.id)
+    if (this.props.item.quantity == 1) {
+      this.props.onRemoveItem(e)
     }
-    this.setState({ quantity: this.state.quantity - 1 })
-    this.props.onReducePrice(e.price)
+    //this.setState({ quantity: this.state.quantity - 1 })
+    this.props.onReducePrice(e)
   }
 
   render() {
@@ -31,9 +29,8 @@ class ItemView_no_btn extends Component {
             <h3>가격: {item.price}</h3>
             <h3>수량: </h3>
             <button onClick={() => this.onDelete(item)}>-</button>
-            {console.log(this.state.quantity)}
-            {this.state.quantity}
-            <button onClick={() => this.onAddPrice(item.price)}>+</button>
+            {item.quantity}
+            <button onClick={() => this.onAddPrice(item)}>+</button>
             {/* <button onClick={() => this.props.onAddPrice(item.price)}>+</button> */}
           </span>
         </div>
