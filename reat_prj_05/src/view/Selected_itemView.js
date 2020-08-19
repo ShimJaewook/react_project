@@ -1,38 +1,63 @@
-import React, { Component } from "react";
-import { toJS } from "mobx";
-import ItemView_no_btn from "./ItemView_no_btn";
-import "./Selected_itemView.scss";
+import React, { Component } from "react"
+import { toJS } from "mobx"
+import ItemView_no_btn from "./ItemView_no_btn"
+import "./Selected_itemView.scss"
 
 class Selected_itemView extends Component {
   // state = { total_price: 0 };
 
   render() {
-    const selectItems = this.props;
-    const onCalculate = this.props;
-    const total_price = this.props;
-
-    const items = toJS(selectItems).selectItems;
-
+    const selectItems = this.props
+    const { onAddPrice, onReducePrice, onRemoveItem } = this.props
+    const items = toJS(selectItems).selectItems
+    //onRemoveItem={onRemoveItem}
     return (
-      <div class="sp_cart_wrap">
+      <div className="sp_cart">
+        {items.map((item) => {
+          return (
+            <ItemView_no_btn
+              item={item}
+              onAddPrice={onAddPrice}
+              onReducePrice={onReducePrice}
+              onRemoveItem={onRemoveItem}
+            />
+          )
+        })}
         <div>
-          <h1>장바구니</h1>
-        </div>
-        <div className="sp_cart">
-          <div>
-            {items.map((item) => {
-              return <ItemView_no_btn item={item} onCalculate={onCalculate} />;
-            })}
-          </div>
-
-          <div>
-            <span>총 결제 금액 : {total_price.total_price}</span>
-            <button>결제하기</button>
-          </div>
+          <span>총 결제 금액 : {this.props.total_price}</span>
+          <button>결제하기</button>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Selected_itemView;
+export default Selected_itemView
+
+// import React, { Component } from "react";
+// import { toJS } from "mobx";
+// import ItemView_no_btn from "./ItemView_no_btn";
+// import "./Selected_itemView.scss";
+
+// class Selected_itemView extends Component {
+//   render() {
+//     const selectItems = this.props;
+//     const items = toJS(selectItems).selectItems;
+//     let total_price = 0;
+
+//     return (
+//       <div className="sp_cart">
+//         {items.map((item) => {
+//           total_price += item.price * 1;
+//           return <ItemView_no_btn item={item} />;
+//         })}
+//         <div>
+//           <span>총 결제 금액 : {total_price}</span>
+//           <button>결제하기</button>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Selected_itemView;

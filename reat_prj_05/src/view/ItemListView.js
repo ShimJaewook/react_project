@@ -1,24 +1,22 @@
-import React, { Component } from "react";
-import ItemView_no_btn from "./ItemView";
-import "./ItemView.scss";
+import React, { Component } from "react"
+// import ItemView from "./ItemView";
+import ItemView_Info from "./ItemView_Info"
 
 class ItemListView extends Component {
-  state = { visible: true };
+  state = { visible: true }
 
   handleShow = () => {
-    this.setState({ visible: !this.state.visible });
-  };
+    this.setState({ visible: !this.state.visible })
+  }
 
   render() {
-    const item_class = this.props.item_class;
-    const filtered = this.props.ItemList.filter(
-      (Item) => Item.class === item_class
-    );
+    const item_class = this.props.item_class
+    const filtered = this.props.ItemList.filter((Item) => Item.class === item_class)
 
     // popup trigger item list
     const itemList = filtered.map((item) => {
-      return <ItemView_no_btn key={item.id} item={item} />;
-    });
+      return <ItemView_Info key={item.id} item={item} />
+    })
 
     return (
       <div>
@@ -31,8 +29,8 @@ class ItemListView extends Component {
           <div className="sub_wrap">{itemList}</div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default ItemListView;
+export default ItemListView

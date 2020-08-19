@@ -1,21 +1,14 @@
-import React, { Component } from "react";
-import ItemView from "./ItemView";
-import "./ItemView.scss";
+import React, { Component } from "react"
+import ItemView from "./ItemView"
 
 class ItemAllListView extends Component {
   render() {
-    const itemList = this.props.ItemList;
-    const onAdd_SelectedItem = this.props.onAdd_SelectedItem;
+    const itemList = this.props.ItemList
 
-    return (
-      <div className="allItem_wrap">
-        {itemList.map((item) => {
-          return (
-            <ItemView item={item} onAdd_SelectedItem={onAdd_SelectedItem} />
-          );
-        })}
-      </div>
-    );
+    return itemList.map((item) => {
+      return <ItemView item={item} onAdd_SelectedItem={this.props.onAdd_SelectedItem} />
+    })
   }
 }
-export default ItemAllListView;
+
+export default ItemAllListView
