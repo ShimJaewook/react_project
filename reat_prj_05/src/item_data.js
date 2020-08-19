@@ -157,6 +157,51 @@ const Items = [
     category: "bath",
     detailUrl: "./item_images/bath_cream_detail.png",
   },
+  {
+    id: 16,
+    name: "닭가슴살 육포",
+    price: "12300",
+    imgUrl: "./item_images/food_chickenBreast.png",
+    description: "건강한 단백질로 가득찬 살코기, 단백한 닭가슴살 육포",
+    category: "food",
+    detailUrl: "./item_images/food_chickenBreast_detail.png"
+  },
+  {
+    id: 17,
+    name: "먼지괴물 소탕작전",
+    price: "17500",
+    imgUrl: "./item_images/toy_dustMonster.png",
+    description: "먼지괴물 물리칠 용감한 멍멍이들 모여라!",
+    category: "toy",
+    detailUrl: "./item_images/toy_dustMonster_detail.png"
+  },
+  {
+    id: 18,
+    name: "NO 인식표",
+    price: "7000",
+    imgUrl: "./item_images/accessary_noSign.png",
+    description: "낯선사람을 무서워하거나, 컨디션이 좋지 않아 만지는 것을 싫어하는 아이들에게 어울리는 펫티켓 아이템",
+    category: "accessary",
+    detailUrl: "./item_images/accessary_noSign_detail.png"
+  },
+  {
+    id: 19,
+    name: "로즈제라늄 아웃도어 스프레이",
+    price: "7500",
+    imgUrl: "./item_images/bath_outdoorSpray.png",
+    description: "동물에겐 좋은 향이지만 진드기는 기피하는 로즈제라늄 아웃도어 스프레이!",
+    category: "bath",
+    detailUrl: "./item_images/bath_outdoorSpray_detail.png"
+  },
+  {
+    id: 20,
+    name: "기능성 우비 (방풍/투습)",
+    price: "27000",
+    imgUrl: "./item_images/clothes_waterproof.png",
+    description: "비가오나 눈이오나 누구도 내 산책을 막을 수 없어!",
+    category: "clothes",
+    detailUrl: "./item_images/clothes_waterproof_detail.png"
+  },
 ];
 
 export default Items;
