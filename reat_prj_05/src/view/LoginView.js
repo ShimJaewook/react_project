@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-import { Form, Button, Input } from "semantic-ui-react";
+import { Form, Button, Input, Modal, Header, Image } from "semantic-ui-react";
 import "./LoginView.css";
 import "./HeaderMenu.css";
 import "./DIY_item";
 class LoginView extends Component {
-    
-    state = {visible1: true,
-            visible2: true};
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false,
+            visible1: true,
+            visible2: true,
+        };
+    }
 
     changeView = (e) => {
         if(this.state.visible1) 
@@ -61,14 +66,51 @@ class LoginView extends Component {
         }
 
         return (
-            <div className="header">
+            
+            <div className="top-header">
                 <div>
-               
-            {console.log(rootUser)}
-            {this.state.visible1 &&
-                <Button onClick = {this.changeView}>로그인</Button>
-            }
-                         <img src="./logo_image/puppy_logo.jpg" id="header_logo_pc" width="80px" height="120%" alt="puppy_logo"></img> 
+                           {/* {this.state.visible1 && */}
+                {/* // <Button onClick = {this.changeView}>로그인</Button> */}
+                {/* <Modal className="login-modal"
+                    onClose={() => this.setState({ open: false })}
+                    onOpen={() => this.setState({ open: true })}
+                    open={this.state.open}
+                    trigger={<Button className="btn">로그인</Button>}>
+
+                    <Modal.Header>로그인 팝업띄우기</Modal.Header>
+                    <Modal.Content>
+                        <Modal.Description>
+                            <div>
+                                <Input type="text" id="userid" placeholder='아이디' />
+                                &nbsp;&nbsp;
+                                <Input type="password" id="password"  placeholder='비밀번호' />  
+                                &nbsp;&nbsp;
+                            </div>
+                        </Modal.Description>
+                    </Modal.Content>
+                    <Modal.Actions>
+                        <Button id="btn" onClick={(id)=>{ 
+                        if(rootUser.id !== document.getElementById("userid").value) {
+                            alert('아이디가 틀렸습니다.');
+                        }
+                    
+                        if(rootUser.pw !== document.getElementById("password").value){
+                            alert('비밀번호가 틀렸습니다');
+                        }
+                        
+                        if(rootUser.pw===document.getElementById("password").value
+                            && rootUser.id===document.getElementById("userid").value){
+                            this.changeView();
+                            alert('로그인 되었습니다!');
+                            this.setState({open:false});
+                        }}  
+                        }>로그인
+                        </Button>
+                    </Modal.Actions>
+            </Modal> */}
+            {/* } */}
+            
+            {/* <img src="./logo_image/puppy_logo.jpg" id="header_logo_pc" width="80px" height="120%" alt="puppy_logo"></img> 
             {!this.state.visible1 && this.state.visible2 && <div>
                 <div>
                 <Input type="text" id="userid" placeholder='아이디' />
@@ -93,11 +135,9 @@ class LoginView extends Component {
                         
                 }}
             }>로그인
-            </Button>
-            </div>
-         
+            </Button> */}
+            {/* </div> */}
             
-        </div>}
             
         
         </div> 
@@ -117,6 +157,46 @@ class LoginView extends Component {
                     </li>
                     <li> 
                         <a href="#" id="menu-04"><span>상단으로</span></a>
+                    </li>
+                    <Modal className="login-modal"
+                    onClose={() => this.setState({ open: false })}
+                    onOpen={() => this.setState({ open: true })}
+                    open={this.state.open}
+                    trigger={<Button className="btn">로그인</Button>}>
+
+                    <Modal.Header>로그인 팝업띄우기</Modal.Header>
+                    <Modal.Content>
+                        <Modal.Description>
+                            <div>
+                                <Input type="text" id="userid" placeholder='아이디' />
+                                &nbsp;&nbsp;
+                                <Input type="password" id="password"  placeholder='비밀번호' />  
+                                &nbsp;&nbsp;
+                            </div>
+                        </Modal.Description>
+                    </Modal.Content>
+                    <Modal.Actions>
+                        <Button id="btn" onClick={(id)=>{ 
+                        if(rootUser.id !== document.getElementById("userid").value) {
+                            alert('아이디가 틀렸습니다.');
+                        }
+                    
+                        if(rootUser.pw !== document.getElementById("password").value){
+                            alert('비밀번호가 틀렸습니다');
+                        }
+                        
+                        if(rootUser.pw===document.getElementById("password").value
+                            && rootUser.id===document.getElementById("userid").value){
+                            this.changeView();
+                            alert('로그인 되었습니다!');
+                            this.setState({open:false});
+                        }}  
+                        }>로그인
+                        </Button>
+                    </Modal.Actions>
+            </Modal>
+                    <li>
+
                     </li>
                 </ul>
             </div>

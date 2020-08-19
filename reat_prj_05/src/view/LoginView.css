@@ -1,4 +1,4 @@
-.header {
+.top-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -8,7 +8,7 @@
         z-index: 999;
         height: 80px;
         padding: 1rem;
-        /* color: white; */
+        color: white;
         background: white;
         font-weight: bold;
         display: flex;
@@ -16,6 +16,10 @@
         align-items: center;
       }
 
+.login-modal {
+  height: 50% !important;
+  width: 50% !important;
+}
 
 .header_content{
 

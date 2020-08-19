@@ -53,7 +53,7 @@ class LoginContainer extends Component {
         return (
             <div>
                 <LoginView users={users}/>
-                <LoginModalView users={users}/>
+                {/* <LoginModalView users={users}/> */}
             </div>
         );
     }
