@@ -1,19 +1,39 @@
 .sub_img {
   width: 800px;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 10px;
+  height: 250px;
+  /* border: 1px solid black; */
+  overflow: hidden;
   margin: 0 auto;
   margin-top: 5rem;
   text-align: center;
+  position: relative;
 }
 
 .sub_img h1 {
-  justify-content: center;
-  padding-top: 5rem;
+  position: absolute;
+  text-align: center;
+  z-index: 9999;
+  top: 25%;
+  left: 35%;
+  font-size: 4rem;
+  color: white;
+  font-family: "BMHANNAAir", "NanumGothic";
 }
+
+.back {
+  border-radius: 10px 10px 0 0;
+  width: 800px;
+  z-index: -99999;
+  position: relative;
+}
+
 .show {
   display: block;
+  margin: auto;
+  width: 800px;
+  height: 250px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgb(168, 168, 168);
 }
 
 .hide {
@@ -21,11 +41,13 @@
 }
 
 .img_wrap {
+  padding-top: 1rem;
   display: inline-flex;
   position: relative;
   width: 200px;
-  height: 200px;
+  height: 250px;
   overflow: hidden;
+  margin: auto;
 }
 
 .sub_imgs {
@@ -87,7 +109,7 @@
   content: "";
   width: 150%;
   height: 150%;
-  background-color: #17ad88;
+  background-color: #3aa1dd;
   transform: rotate(45deg);
   position: absolute;
   top: 65%;
@@ -114,8 +136,8 @@ ul div .btn:hover i {
 }
 
 .cart_info h3 {
-  font-size: 10px;
+  font-size: 14px;
 }
 .cart_info h2 {
-  font-size: 15px;
+  font-size: 16px;
 }

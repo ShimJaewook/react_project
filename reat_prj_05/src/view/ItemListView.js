@@ -23,8 +23,10 @@ class ItemListView extends Component {
     return (
       <div>
         <div className="sub_img" onClick={this.handleShow}>
-          <h1>Subscription Item {item_class}</h1>
+          <img className="back" src={`/main_images/sub${item_class}.png`} />
+          <h1>구독 상품 {item_class}</h1>
         </div>
+
         <div className={this.state.visible === true ? "hide" : "show"}>
           <div className="sub_wrap">{itemList}</div>
         </div>
