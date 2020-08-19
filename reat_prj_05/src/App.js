@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ItemListContainer from "./container/ItemListContainer";
 import LoginContainer from "./container/LoginContainer";
-
 import MainImageContainer from "./container/MainImageContainer";
 import ItemAllMain from "./view/menu/ItemAllMain";
 import Footer from "./view/menu/Footer";
@@ -21,7 +20,7 @@ class App extends Component {
 
         {state === "home" && <MainImageContainer />}
         {state === "home" && <ItemListContainer />}
-        {/* {state === "home" && <MiddleContentContainer />} */}
+
         {state === "allItem" && <ItemAllMain />}
 
         <Footer />
@@ -29,4 +28,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;
