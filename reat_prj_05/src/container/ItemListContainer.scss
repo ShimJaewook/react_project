@@ -1,0 +1,72 @@
+.sub_img {
+  &:hover {
+  }
+}
+
+#subscription_point { 
+  height: 1px;
+}
+
+.sub_header {
+  margin: 10rem;
+
+  text-align: center;
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  -webkit-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  font-family: "NanumGothic";
+  h1 {
+    font-weight: lighter;
+    display: inline;
+    color: white;
+    font-size: 3rem;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+  }
+  h3 {
+    font-weight: lighter;
+  }
+  .sub_content {
+    padding: 2rem;
+    background-color: #59a1ca;
+    height: 150px;
+    width: 1300px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    padding-left: 4rem;
+    height: 3rem;
+    margin-bottom: 10px;
+  }
+  .button_wrap {
+    margin: auto;
+  }
+}
+
+.header_imgs {
+  text-align: center;
+
+  padding-bottom: 10rem;
+  img {
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+  }
+}
+
+.sub_bottom {
+  //   display: flex;
+  margin: auto;
+  text-align: center;
+  .btnnp {
+    margin-top: 10rem;
+    width: 15rem;
+  }
+}
