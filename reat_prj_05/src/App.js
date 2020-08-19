@@ -3,9 +3,8 @@ import ItemListContainer from "./container/ItemListContainer";
 import LoginContainer from "./container/LoginContainer";
 import MainImageContainer from "./container/MainImageContainer";
 import ItemAllMain from "./view/menu/ItemAllMain";
-import Footer from "./view/menu/Footer";
-import MiddleContentContainer from "./container/MiddleContentContainer";
-import Selected_item_Container from "./container/Selected_item_Container";
+import Footer from "./view/menu/footer";
+
 import { observer, inject } from "mobx-react";
 
 @inject("StateStore")
