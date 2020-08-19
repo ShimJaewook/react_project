@@ -1,16 +1,26 @@
 import React, { Component } from "react";
 import { toJS } from "mobx";
-import ItemView from "./ItemView";
 import ItemView_no_btn from "./ItemView_no_btn";
+import "./Selected_itemView.scss";
 
 class Selected_itemView extends Component {
   render() {
     const selectItems = this.props;
     const items = toJS(selectItems).selectItems;
+    let total_price = 0;
 
-    return items.map((item) => {
-      return <ItemView_no_btn item={item} />;
-    });
+    return (
+      <div className="sp_cart">
+        {items.map((item) => {
+          total_price += item.price * 1;
+          return <ItemView_no_btn item={item} />;
+        })}
+        <div>
+          <span>총 결제 금액 : {total_price}</span>
+          <button>결제하기</button>
+        </div>
+      </div>
+    );
   }
 }
 

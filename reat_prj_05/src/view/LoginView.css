@@ -8,7 +8,7 @@
         z-index: 999;
         height: 80px;
         padding: 1rem;
-        color: white;
+        /* color: white; */
         background: white;
         font-weight: bold;
         display: flex;
@@ -19,6 +19,17 @@
 
 .header_content{
 
+}
+
+ul li {
+  list-style-type: none;
+  float: left;
+  margin-left: 15px;
+}
+
+.welcome {
+  float: right;
+  margin-top: 10px;
 }
 
 * {

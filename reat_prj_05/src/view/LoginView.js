@@ -63,20 +63,19 @@ class LoginView extends Component {
         return (
             <div className="header">
                 <div>
+               
             {console.log(rootUser)}
             {this.state.visible1 &&
                 <Button onClick = {this.changeView}>로그인</Button>
             }
-            
+                         <img src="./logo_image/puppy_logo.jpg" id="header_logo_pc" width="80px" height="120%" alt="puppy_logo"></img> 
             {!this.state.visible1 && this.state.visible2 && <div>
                 <div>
                 <Input type="text" id="userid" placeholder='아이디' />
-                <br />
-                <br />
+                &nbsp;&nbsp;
                 <Input type="password" id="password"  placeholder='비밀번호' />  
-            </div>
-         
-              <Button id="btn" onClick={(id,)=>{ 
+                &nbsp;&nbsp;
+                <Button id="btn" onClick={(id,)=>{ 
                   if(rootUser.id !== document.getElementById("userid").value) {
                       alert('아이디가 틀렸습니다.');
                   }
@@ -95,46 +94,40 @@ class LoginView extends Component {
                 }}
             }>로그인
             </Button>
+            </div>
+         
+            
         </div>}
             
-        {!this.state.visible2 && <div className="welcome"> 박민재님 안녕하세요!
-        </div>}
-        </div>
+        
+        </div> 
         <div class="header_content">
+       
             <div class="header_menu">
-                <nav>
-                        <a href="#" id="menu-01" onClick=""><span>구독상품</span></a>
-                        <a href="#" id="menu-02" onClick=""><span>나만의 상품보기</span></a>
-                        <a href="#" id="menu-03" onClick=""><span>전체 상품보기</span></a>
-                        <a href="#" id="menu-04" onClick=""><span>상단으로</span></a>
-                </nav>
+          
+                <ul class="liMenu">
+                    <li>
+                        <a href="#subscription item id" id="menu-01" ><span>구독상품</span></a>
+                    </li>
+                     <li>  
+                         <a href="#" id="menu-02"><span>나만의 상품보기</span></a>
+                     </li> 
+                     <li>  
+                          <a href="#" id="menu-03"><span>전체 상품보기</span></a>
+                    </li>
+                    <li> 
+                        <a href="#" id="menu-04"><span>상단으로</span></a>
+                    </li>
+                </ul>
             </div>
             
-            <div class="section-01 scroll">
-
-
-            </div>
-
-            <div class="section-02 scroll">
-
-
-            </div>
-
-
-            <div class="section-03 scroll">
-
-
-            </div>
-
-            
-            <div class="section-04 scroll">
-
-
-            </div>
+           
+            {!this.state.visible2 && <div className="welcome"> 박민재님 안녕하세요!
+        </div>}
         </div>
                 
 
-
+     
 
             </div>
 

@@ -21,7 +21,7 @@ class ItemListView extends Component {
     });
 
     return (
-      <div>
+      <div id="subscription item id">
         <div className="sub_img" onClick={this.handleShow}>
           <h1>Subscription Item {item_class}</h1>
         </div>
