@@ -43,15 +43,20 @@
 import React, { Component } from 'react';
 import LoginView from "../view/LoginView";
 import { inject, observer } from "mobx-react";
-@inject('UserStore')
-@observer
 
+@inject('UserStore', 'StateStore')
+@observer
 class LoginContainer extends Component {
+    changeState = (state) => {
+        this.props.StateStore.setState(state);
+    }
+
     render() {
+
         const {users} = this.props.UserStore;
         return (
             <div>
-                <LoginView users={users}/>
+                <LoginView users={users} changeState={this.changeState}/>
             </div>
         );
     }

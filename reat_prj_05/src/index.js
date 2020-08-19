@@ -3,19 +3,26 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import ItemStore from "./store/ItemStore";
-import MainImageStore from "./store/MainImageStore";
+
+import MainImageStore from "./store/MainImageStore"
+
 
 import "semantic-ui-css/semantic.min.css";
+
 
 import { Provider } from "mobx-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UserStore from "./store/UserStore";
+import StateStore from "./store/StateStore";
+
+
 
 ReactDOM.render(
   <Provider
     ItemStore={ItemStore}
     MainImageStore={MainImageStore}
     UserStore={UserStore}
+    StateStore = {StateStore}
   >
     <App />
   </Provider>,

@@ -2,9 +2,11 @@ import { observable, action, toJS } from "mobx"
 import Items from "../item_data"
 
 class ItemStore {
+  
   @observable
   items = Items
 
+  
   @observable
   item = Items
 

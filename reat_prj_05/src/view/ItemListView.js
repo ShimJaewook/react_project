@@ -19,7 +19,7 @@ class ItemListView extends Component {
     })
 
     return (
-      <div>
+      <div id="subscription item id">
         <div className="sub_img" onClick={this.handleShow}>
           <img className="back" src={`/main_images/sub${item_class}.png`} />
           <h1>구독 상품 {item_class}</h1>
