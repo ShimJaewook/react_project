@@ -70,7 +70,9 @@ class LoginView extends Component {
           <div class="header_menu">
             <div className="logo">
               <img src="/logo_image/LOGO.png" />
-              <h1> 멍토피아</h1>
+              <a href="#">
+                <h1> 멍토피아</h1>
+              </a>
             </div>
             <ul class="liMenu">
               <li>
