@@ -7,10 +7,21 @@
   }
 }
 
+.cart_info {
+  margin: 0;
+  padding-left: 1rem;
+  h3 {
+    margin: 0;
+    font-weight: lighter;
+  }
+  h2 {
+    padding-top: 2rem;
+  }
+}
+
 .sp_cart {
   padding: 10rem 0;
   //   margin: 10rem auto;
-
   border-top: 1px solid black;
   button {
     border: 1px solid lightgray;
