@@ -1,7 +1,8 @@
 const Users = [
     {
         id: 'user',
-        password: 'user'
+        password: 'user',
+        name: '멀캠' 
     }
 ]
 
