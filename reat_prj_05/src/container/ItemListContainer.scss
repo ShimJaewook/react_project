@@ -1,3 +1,8 @@
+.sub_img {
+  &:hover {
+  }
+}
+
 .sub_header {
   margin: 10rem;
 
@@ -8,7 +13,7 @@
   -webkit-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
-  font-family: "BMHANNAAir", "NanumGothic";
+  font-family: "NanumGothic";
   h1 {
     font-weight: lighter;
     display: inline;
@@ -27,7 +32,17 @@
     height: 150px;
     width: 1300px;
     border-radius: 10px;
-    display: inline;
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    padding-left: 4rem;
+    height: 3rem;
+    margin-bottom: 10px;
+  }
+  .button_wrap {
+    margin: auto;
   }
 }
 
@@ -39,5 +54,15 @@
     align-items: center;
     padding: 1rem;
     margin: auto;
+  }
+}
+
+.sub_bottom {
+  //   display: flex;
+  margin: auto;
+  text-align: center;
+  .btnnp {
+    margin-top: 10rem;
+    width: 15rem;
   }
 }
