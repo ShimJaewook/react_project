@@ -1,0 +1,44 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 2rem;
+  h1 {
+    display: inline;
+    margin: 0;
+    color: black;
+  }
+  img {
+    width: 80px;
+  }
+}
+
+.header_menu {
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: baseline;
+  align-content: center;
+  transition: 0.4s;
+  z-index: 999999;
+  box-shadow: 9px 2px 9px 0px rgba(136, 136, 136, 1);
+  ul li {
+    list-style-type: none;
+    float: right;
+    padding: 0 1rem;
+    margin-left: 15px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+  }
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    transition: 0.3s;
+  }
+}

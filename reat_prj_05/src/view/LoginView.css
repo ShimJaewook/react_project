@@ -1,35 +1,28 @@
-.top-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    left: 0;
-    right: 0;
-  
-        z-index: 999;
-        height: 80px;
-        padding: 1rem;
-        color: white;
-        background: white;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
+/* .top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 270px;
+  z-index: 999;
+  height: 80px;
+  padding: 1rem;
+  color: white;
+  background: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+/* 
 
 .login-modal {
   height: 50% !important;
   width: 50% !important;
 }
 
-.header_content{
 
-}
-
-ul li {
-  list-style-type: none;
-  float: left;
-  margin-left: 15px;
-}
 
 .welcome {
   float: right;
@@ -37,6 +30,5 @@ ul li {
 }
 
 * {
-    box-sizing: border-box;
-   
-  }
+  box-sizing: border-box;
+} */
