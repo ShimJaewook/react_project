@@ -5,10 +5,13 @@ import { inject, observer } from "mobx-react"
 import Selected_itemView from "../view/Selected_itemView"
 import "./Selected_item.css"
 
-
-@inject("ItemStore")
+@inject("ItemStore", "UserStore")
 @observer
 class Selected_item_Container extends Component {
+  onLoginCheck = (e) => {
+    this.props.UserStore.loginCheck(e)
+  }
+
   onAddPrice = (price) => {
     this.props.ItemStore.addPrice(price)
   }
@@ -28,6 +31,7 @@ class Selected_item_Container extends Component {
           onAddPrice={this.onAddPrice}
           onReducePrice={this.onReducePrice}
           onRemoveItem={this.onRemoveItem}
+          onLoginCheck={this.onLoginCheck}
           total_price={total_price}
         />
       </div>

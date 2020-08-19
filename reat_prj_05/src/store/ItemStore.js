@@ -1,44 +1,45 @@
-import { observable, action, toJS } from "mobx";
-import Items from "../item_data";
+import { observable, action, toJS } from "mobx"
+import Items from "../item_data"
 
 class ItemStore {
   @observable
-  items = Items;
+  items = Items
 
   @observable
-  item = Items;
+  item = Items
 
   @observable
-  label = "all";
+  label = "all"
 
   @observable
-  selectItems = [];
+  selectItems = []
 
   @observable
-  total_price = 0;
+  total_price = 0
 
   @action
   filterItem(value) {
-    this.item = this.item.filter((element) => element.category !== value);
-  }
-
-  @action
-  selectItem(label) {
-    this.item = this.items.filter((ele) => ele.category === label);
+    this.item = this.item.filter((element) => element.category !== value)
+    this.item = this.item.sort(function (a, b) {
+      return a.id - b.id
+    })
   }
 
   @action
   addItem(value) {
-    const item = Items.filter((element) => element.category === value);
-    this.item = this.item.concat(item);
+    const item = Items.filter((element) => element.category === value)
+    this.item = this.item.concat(item)
+    this.item = this.item.sort(function (a, b) {
+      return a.id - b.id
+    })
   }
 
   @action
   add_SelectedItem(ele) {
     if (this.selectItems.indexOf(ele) == -1) {
-      this.selectItems = this.selectItems.concat(ele);
-      this.total_price = this.total_price + ele.price;
-      ele.quantity = 1;
+      this.selectItems = this.selectItems.concat(ele)
+      this.total_price = this.total_price + ele.price
+      ele.quantity = 1
     }
 
     // this.selectItems = toJS(this.selectItems);
@@ -47,21 +48,19 @@ class ItemStore {
 
   @action
   addPrice(e) {
-    this.total_price = this.total_price + e.price;
-    e.quantity = e.quantity + 1;
+    this.total_price = this.total_price + e.price
+    e.quantity = e.quantity + 1
   }
 
   @action
   reducePrice(e) {
-    this.total_price = this.total_price - e.price;
-    e.quantity = e.quantity - 1;
+    this.total_price = this.total_price - e.price
+    e.quantity = e.quantity - 1
   }
 
   @action
   removeItem(e) {
-    this.selectItems = this.selectItems.filter(
-      (element) => element.id !== e.id
-    );
+    this.selectItems = this.selectItems.filter((element) => element.id !== e.id)
   }
 }
-export default new ItemStore();
+export default new ItemStore()
