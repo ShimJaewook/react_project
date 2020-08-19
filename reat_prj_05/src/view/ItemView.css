@@ -14,10 +14,11 @@
   text-align: center;
   z-index: 9999;
   top: 25%;
-  left: 35%;
-  font-size: 4rem;
+  left: 40%;
+  font-size: 3rem;
   color: white;
-  font-family: "BMHANNAAir", "NanumGothic";
+  font-family: "NanumGothic";
+  font-weight: lighter;
 }
 
 .back {
@@ -38,16 +39,6 @@
 
 .hide {
   display: none;
-}
-
-.img_wrap {
-  padding-top: 1rem;
-  display: inline-flex;
-  position: relative;
-  width: 200px;
-  height: 250px;
-  overflow: hidden;
-  margin: auto;
 }
 
 .sub_imgs {

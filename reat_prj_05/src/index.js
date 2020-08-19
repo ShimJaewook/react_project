@@ -13,6 +13,7 @@ import "semantic-ui-css/semantic.min.css";
 import { Provider } from "mobx-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UserStore from "./store/UserStore";
+import StateStore from "./store/StateStore";
 
 
 
@@ -21,6 +22,7 @@ ReactDOM.render(
     ItemStore={ItemStore}
     MainImageStore={MainImageStore}
     UserStore={UserStore}
+    StateStore = {StateStore}
   >
     <App />
   </Provider>,

@@ -137,23 +137,19 @@ class LoginView extends Component {
             }>로그인
             </Button> */}
             {/* </div> */}
-            
-            
         
         </div> 
         <div class="header_content">
-       
             <div class="header_menu">
-          
                 <ul class="liMenu">
+                    <li>  
+                        <a href="#" id="menu-02" onClick={()=>this.props.changeState("home")}><span>메인으로</span></a>
+                    </li> 
                     <li>
-                        <a href="#subscription item id" id="menu-01" ><span>구독상품</span></a>
+                        <a onClick={()=>this.props.changeState("home")} href="#subscription item id" id="menu-01" ><span>구독상품</span></a>
                     </li>
-                     <li>  
-                         <a href="#" id="menu-02"><span>나만의 상품보기</span></a>
-                     </li> 
-                     <li>  
-                          <a href="#" id="menu-03"><span>전체 상품보기</span></a>
+                    <li>  
+                        <a href="#" id="menu-03" onClick={()=>this.props.changeState("allItem")}><span>전체 상품보기</span></a>
                     </li>
                     <li> 
                         <a href="#" id="menu-04"><span>상단으로</span></a>
@@ -206,14 +202,7 @@ class LoginView extends Component {
             {!this.state.visible2 && <div className="welcome"> 박민재님 안녕하세요!
         </div>}
         </div>
-                
-
-     
-
             </div>
-
-
-
         );
     }
 }
