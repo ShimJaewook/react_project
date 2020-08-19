@@ -146,7 +146,7 @@ class LoginView extends Component {
                         <a href="#" id="menu-02" onClick={()=>this.props.changeState("home")}><span>메인으로</span></a>
                     </li> 
                     <li>
-                        <a onClick={()=>this.props.changeState("home")} href="#subscription item id" id="menu-01" ><span>구독상품</span></a>
+                        <a onClick={()=>this.props.changeState("home")} href="#subscription_point" id="menu-01" ><span>구독상품</span></a>
                     </li>
                     <li>  
                         <a href="#" id="menu-03" onClick={()=>this.props.changeState("allItem")}><span>전체 상품보기</span></a>

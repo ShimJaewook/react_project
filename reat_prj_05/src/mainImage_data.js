@@ -13,7 +13,7 @@ const MainImages = [
     },
     {
         id: 4,
-        imgUrl: "./main_images/swimming_dog.png"
+        imgUrl: "./main_images/running_dog.png"
     }
 ]
 
