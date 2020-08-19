@@ -63,4 +63,9 @@
     margin-top: 10rem;
     width: 15rem;
   }
+
+  a:visited {
+    color: unset;
+    text-decoration: none;
+  }
 }

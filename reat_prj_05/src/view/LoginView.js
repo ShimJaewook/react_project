@@ -19,42 +19,6 @@ class LoginView extends Component {
       this.setState({ visible2: !this.state.visible2 });
   };
 
-  scrollView = (e) => {
-    const menuHeight = document.querySelector(".header_menu");
-    if (e.value === document.getElementById("menu-01").value) {
-      const location = document.querySelector("#menu-01").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
-      window.scrollTo({
-        //직접 태그의 위치로 스크롤이동
-        top: location - menuHeight,
-        behavior: "smooth",
-      });
-    }
-    if (e.value === document.getElementById("menu-02").value) {
-      const location = document.querySelector("#sub_img id").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
-      window.scrollTo({
-        //직접 태그의 위치로 스크롤이동
-        top: location - menuHeight,
-        behavior: "smooth",
-      });
-    }
-    if (e.value === document.getElementById("menu-03").value) {
-      const location = document.querySelector("#menu-03").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
-      window.scrollTo({
-        //직접 태그의 위치로 스크롤이동
-        top: location - menuHeight,
-        behavior: "smooth",
-      });
-    }
-    if (e.value === document.getElementById("menu-04").value) {
-      const location = document.querySelector("#menu-04").offsetTop; //해당 id를 갖는 요소의 top 위치(마진 값까지 포함)를 가져올 수 있다.
-      window.scrollTo({
-        //직접 태그의 위치로 smooth하게 스크롤이동
-        top: location - menuHeight,
-        behavior: "smooth",
-      });
-    }
-  };
-
   render() {
     const users = this.props.users;
 
@@ -87,7 +51,7 @@ class LoginView extends Component {
               <li>
                 <a
                   onClick={() => this.props.changeState("home")}
-                  href="#subscription item id"
+                  href="#subscription_point"
                   id="menu-01"
                 >
                   <span>구독상품</span>
