@@ -51,11 +51,11 @@
 }
 .info_imgs {
   padding: 1rem;
-
+  border-radius: 15%;
   z-index: -999;
 }
 .info_imgs:hover {
-  background: #dddddd;
+  background: #eeeeee;
 }
 
 .sub_wrap {

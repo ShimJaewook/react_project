@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import ItemDetailView from "./ItemDetailView";
-import "./ItemView.css";
-import "./ItemView.scss";
+import React, { Component } from "react"
+import ItemDetailView from "./ItemDetailView"
+import "./ItemView.css"
+import "./ItemView.scss"
 
 class ItemView extends Component {
-  state = { mouse: true };
+  state = { mouse: true }
   render() {
-    const { item, onAdd_SelectedItem } = this.props;
+    const { item, onAdd_SelectedItem } = this.props
 
     return (
       <div className="img_wrap">
@@ -35,8 +35,8 @@ class ItemView extends Component {
           </dlv>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default ItemView;
+export default ItemView

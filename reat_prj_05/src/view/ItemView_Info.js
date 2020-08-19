@@ -6,7 +6,7 @@ import "./ItemDetailView.css"
 import ItemStore from "../store/MainImageStore"
 
 class ItemView_Info extends Component {
-  state = { open: false }
+  state = { open: false, mouse: true }
   render() {
     const { item } = this.props
 
@@ -18,7 +18,14 @@ class ItemView_Info extends Component {
             onClose={() => this.setState({ open: false })}
             onOpen={() => this.setState({ open: true })}
             open={this.state.open}
-            trigger={<img className="info_imgs" src={item.imgUrl} width="200px" height="200px" />}
+            trigger={
+              <div>
+                <div className="sub_item_info">
+                  <h3>{item.name}</h3>
+                </div>
+                <img className="info_imgs" src={item.imgUrl} width="200px" height="200px" />
+              </div>
+            }
           >
             <Modal.Content scrolling className="detail-content">
               <Image size="large" src={this.props.item.detailUrl} wrapped />

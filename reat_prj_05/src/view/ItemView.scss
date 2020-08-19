@@ -6,7 +6,6 @@
   height: 280px;
   overflow: hidden;
   margin: auto;
-  text-align: center;
   justify-items: auto;
 
   .item_info {
@@ -32,6 +31,45 @@
         font-family: "NanumGothic";
         font-weight: lighter;
         font-size: 14px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.img_wrap {
+  padding-top: 1rem;
+  display: inline-flex;
+  position: relative;
+  width: 200px;
+  height: 280px;
+  overflow: hidden;
+  margin: auto;
+  justify-items: auto;
+
+  .sub_item_info {
+    display: none;
+  }
+  &:hover {
+    .float_btn {
+      display: block;
+    }
+    img {
+      border: 3px solid #3aa1dd;
+    }
+
+    .sub_item_info {
+      display: block;
+      width: 200px;
+      text-align: center;
+      position: absolute;
+      top: -15%;
+      // left: 20%;
+
+      h3 {
+        font-family: "NanumGothic";
+        // font-weight: lighter;
+        font-size: 16px;
         margin: 0;
       }
     }
