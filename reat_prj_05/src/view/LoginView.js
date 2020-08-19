@@ -138,4 +138,4 @@ class LoginView extends Component {
     );}
 }
 
-export default LoginView
+export default LoginView;

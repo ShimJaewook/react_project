@@ -1,14 +1,7 @@
-import React, { Component } from "react"
-import "./footer.scss"
-import "bootstrap/dist/css/bootstrap.min.css"
+import React, { Component } from "react";
+import "./footer.scss";
 
 class Footer extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {}
-  }
-
   render() {
     return (
       <div className="footer_wrap">
@@ -35,17 +28,20 @@ class Footer extends Component {
           </div>
           <div className="footer_content">
             <h3>© All Rights Reserved.</h3>
-            <h3> 주식회사 더식스데이. | 사업자등록번호: 697-77-777777</h3>
+            <h3> 주식회사 멍토피아 | 사업자등록번호: 697-77-777777</h3>
 
             <h4>주소: 서울특별시 강남구 테헤란로 212 501호</h4>
             <h4>이메일: 123@gmail.com</h4>
             <br></br>
-            <span>대표젼화: 1522-6553 (마케팅 제휴 관련은 이메일을 통해 문의주시기 바랍니다.)</span>
+            <span>
+              대표젼화: 1522-6553 (마케팅 제휴 관련은 이메일을 통해 문의주시기
+              바랍니다.)
+            </span>
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;
