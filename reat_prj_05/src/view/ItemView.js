@@ -13,7 +13,7 @@ class ItemView extends Component {
         <img
           className="sub_imgs"
           src={item.imgUrl}
-          width="200px"
+          width="190px"
           height="200px"
           onMouseEnter={() => this.setState({ mouse: !this.state.mouse })}
         />
@@ -21,7 +21,7 @@ class ItemView extends Component {
         <div className={this.state.mouse === true ? "float_btn" : "hide"}>
           <dlv className="ul">
             <div>
-              <ItemDetailView item={item} />
+              <ItemDetailView item={item}/>
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>

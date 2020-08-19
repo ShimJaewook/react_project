@@ -46,7 +46,7 @@
 .sub_imgs {
   padding: 1rem;
   position: absolute;
-
+  border-radius: 15%;
   z-index: -999;
 }
 .sub_imgs:hover {
