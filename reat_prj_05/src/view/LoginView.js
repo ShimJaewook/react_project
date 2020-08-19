@@ -1,24 +1,20 @@
 import React, { Component } from "react"
 import { Form, Button, Input, Modal, Header, Image } from "semantic-ui-react"
-import "./LoginView.css"
 import "./LoginView.scss"
 import "./DIY_item"
 class LoginView extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: false,
-      visible: true,
-    //   visible2: true,
-    };
-  }
+    constructor(props) {
+        super(props)
+        this.state = {
+            open: false,
+            visible: true,
+        };
+    }
 
-  changeView = (e) => {
-      this.setState({visible: !this.state.visible});
-    // if (this.state.visible1) this.setState({ visible1: !this.state.visible1 });
-    // else if (this.state.visible1 === false)
-    //   this.setState({ visible2: !this.state.visible2 });
-  };
+    changeView = (e) => {
+        this.props.onChangeLogin();
+        this.setState({visible: !this.state.visible});
+    };
 
     render() {
         const users = this.props.users;
@@ -33,8 +29,10 @@ class LoginView extends Component {
                 <div class="header_content">
                     <div class="header_menu">
                         <div className="logo">
-                            <img src="/logo_image/LOGO.png" />
-                            <h1> 멍토피아</h1>
+                            <a href='#' onClick={() => this.props.changeState("home")}>
+                                <img src="/logo_image/LOGO.png"/>
+                                <h1> 멍토피아</h1>
+                            </a>
                         </div>
                         <ul class="liMenu">
                             <li>
@@ -119,9 +117,9 @@ class LoginView extends Component {
                                     rootUser.id ===
                                         document.getElementById("userid").value
                                     ) {
-                                    this.changeView();
                                     alert("로그인 되었습니다!");
                                     this.setState({ open: false });
+                                    this.changeView();
                                     }
                                 }}
                             >
@@ -130,9 +128,8 @@ class LoginView extends Component {
                         </Modal.Actions>
                     </Modal>
                     }
-                    {!this.state.visible && (
-                        <div className="welcome"> {rootUser.name}님 안녕하세요!</div>
-                    )}
+                    {!this.state.visible && <div className="welcome"> {rootUser.name}님 안녕하세요!</div>}
+                    {!this.state.visible && <span> <a href='#' className="logout" onClick={this.changeView}>로그아웃</a></span>}
                     </li>
                 </ul>
             </div>

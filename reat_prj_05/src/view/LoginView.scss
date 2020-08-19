@@ -45,12 +45,15 @@
     justify-content: space-evenly;
     font-size: 1.2rem;
   }
-  a {
+  ul li a {
     color: gray;
     text-decoration: none;
   }
-  a:hover {
+  ul li a:hover {
     color: black;
     transition: 0.3s;
+  }
+
+  .logout {
   }
 }

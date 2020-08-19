@@ -48,7 +48,7 @@ import { inject, observer } from "mobx-react"
 @observer
 class LoginContainer extends Component {
   onChangeLogin = () => {
-    this.props.UserStore.changeLogin()
+    this.props.UserStore.changeLogin();
   }
 
   changeState = (state) => {
