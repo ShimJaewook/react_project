@@ -1,24 +1,35 @@
-import React from "react";
-import ItemListContainer from "./container/ItemListContainer";
-import LoginContainer from "./container/LoginContainer";
-
+import React, { Component } from "react"
+import ItemListContainer from "./container/ItemListContainer"
+import LoginContainer from "./container/LoginContainer"
 import MainImageContainer from "./container/MainImageContainer";
 import ItemAllMain from "./view/menu/ItemAllMain";
-import Selected_item_Container from "./container/Selected_item_Container";
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import Footer from "./view/menu/Footer";
-import MiddleContentView from "./view/MiddleContentView";
+import MiddleContentContainer from "./container/MiddleContentContainer";
+import Selected_item_Container from "./container/Selected_item_Container"
+import {observer, inject} from "mobx-react";
 
-function App() {
-  return (
-    <div>
-      <LoginContainer />
-      <MainImageContainer />
-      <ItemListContainer />
-      <ItemAllMain />
-      <MiddleContentView />
-      <Footer />
-    </div>
-  );
+@inject("StateStore")
+@observer
+class App extends Component {
+  
+  
+  render () {
+    const state = this.props.StateStore.getState; 
+
+    return (
+      <div>
+        <LoginContainer />
+
+        {state==="home" && <MainImageContainer /> }
+        {state==="home" && <ItemListContainer /> }
+        {state==="home" && <MiddleContentContainer /> }
+
+        {state==="allItem" && <ItemAllMain /> }
+
+        <Footer />
+      </div>
+    )
+  }
 }
-
-export default App;
+export default App
