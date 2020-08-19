@@ -109,8 +109,8 @@ class LoginView extends Component {
                     </Modal.Actions>
             </Modal> */}
             {/* } */}
-            
-            {/* <img src="./logo_image/puppy_logo.jpg" id="header_logo_pc" width="80px" height="120%" alt="puppy_logo"></img> 
+            <img src="./logo_image/puppy_logo.jpg" id="header_logo_pc" width="80px" height="120%" alt="puppy_logo"></img>
+            {/* 
             {!this.state.visible1 && this.state.visible2 && <div>
                 <div>
                 <Input type="text" id="userid" placeholder='아이디' />
@@ -158,11 +158,12 @@ class LoginView extends Component {
                     <li> 
                         <a href="#" id="menu-04"><span>상단으로</span></a>
                     </li>
+                    <li>
                     <Modal className="login-modal"
                     onClose={() => this.setState({ open: false })}
                     onOpen={() => this.setState({ open: true })}
                     open={this.state.open}
-                    trigger={<Button className="btn">로그인</Button>}>
+                    trigger={<a href="#" id="login-modal id"><span>로그인</span></a>}>
 
                     <Modal.Header>로그인 팝업띄우기</Modal.Header>
                     <Modal.Content>
@@ -180,8 +181,8 @@ class LoginView extends Component {
                         if(rootUser.id !== document.getElementById("userid").value) {
                             alert('아이디가 틀렸습니다.');
                         }
-                    
-                        if(rootUser.pw !== document.getElementById("password").value){
+
+                        else if(rootUser.pw !== document.getElementById("password").value){
                             alert('비밀번호가 틀렸습니다');
                         }
                         
@@ -195,7 +196,7 @@ class LoginView extends Component {
                         </Button>
                     </Modal.Actions>
             </Modal>
-                    <li>
+                    
 
                     </li>
                 </ul>
