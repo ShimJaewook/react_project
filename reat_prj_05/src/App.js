@@ -5,6 +5,7 @@ import LoginContainer from "./container/LoginContainer";
 import MainImageContainer from "./container/MainImageContainer";
 import ItemAllMain from "./view/menu/ItemAllMain";
 import Selected_item_Container from "./container/Selected_item_Container";
+import MiddleContentView from "./view/MiddleContentView";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <MainImageContainer />
       <ItemListContainer />
       <ItemAllMain />
+      <MiddleContentView />
     </div>
   );
 }
