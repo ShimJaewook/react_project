@@ -1,15 +1,9 @@
-.sub_img {
-  &:hover {
-  }
-}
-
-#subscription_point { 
+#subscription_point {
   height: 1px;
 }
 
 .sub_header {
   margin: 10rem;
-
   text-align: center;
   display: flex;
   border-radius: 10px;
@@ -34,7 +28,7 @@
     padding: 2rem;
     background-color: #59a1ca;
     height: 150px;
-    width: 1300px;
+    width: 100%;
     border-radius: 10px;
     display: inline-flex;
     justify-content: space-evenly;

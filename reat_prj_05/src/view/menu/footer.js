@@ -14,6 +14,9 @@ class Footer extends Component {
       <div className="footer_wrap">
         <div className="footer_container">
           <div className="footer_top">
+            <div className="logo">
+              <img src="/logo_image/LOGO.png"></img>
+            </div>
             <span className="menu">
               <h3>
                 <a href="#">회사소개</a>
