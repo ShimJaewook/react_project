@@ -40,25 +40,32 @@
 //   }
 // }
 
-import React, { Component } from 'react';
-import LoginView from "../view/LoginView";
-import { inject, observer } from "mobx-react";
+import React, { Component } from "react"
+import LoginView from "../view/LoginView"
+import { inject, observer } from "mobx-react"
 
-@inject('UserStore', 'StateStore')
+@inject("UserStore", "StateStore", "ItemStore")
 @observer
 class LoginContainer extends Component {
-    changeState = (state) => {
-        this.props.StateStore.setState(state);
-    }
+  onChangeLogin = () => {
+    this.props.UserStore.changeLogin()
+  }
 
-    render() {
+  changeState = (state) => {
+    this.props.StateStore.setState(state)
+  }
 
-        const {users} = this.props.UserStore;
-        return (
-            <div>
-                <LoginView users={users} changeState={this.changeState}/>
-            </div>
-        );
-    }
+  render() {
+    const { users } = this.props.UserStore
+    return (
+      <div>
+        <LoginView
+          users={users}
+          changeState={this.changeState}
+          onChangeLogin={this.onChangeLogin}
+        />
+      </div>
+    )
+  }
 }
-export default LoginContainer;
+export default LoginContainer

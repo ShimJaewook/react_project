@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import { Form, Button, Input, Modal, Header, Image } from "semantic-ui-react";
-import "./LoginView.css";
-import "./LoginView.scss";
-import "./DIY_item";
+import React, { Component } from "react"
+import { Form, Button, Input, Modal, Header, Image } from "semantic-ui-react"
+import "./LoginView.css"
+import "./LoginView.scss"
+import "./DIY_item"
 class LoginView extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       open: false,
       visible: true,
@@ -141,4 +141,4 @@ class LoginView extends Component {
     );}
 }
 
-export default LoginView;
+export default LoginView
