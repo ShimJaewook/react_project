@@ -3,19 +3,13 @@
 }
 
 .check_ {
-  padding-left: 2rem;
-  position: absolute;
+  padding: 2rem;
+
   width: 200px;
-  height: 500px;
-  margin: auto;
+  height: 100%;
+
   text-align: left;
   left: 20px;
-}
-
-.mainList {
-  width: 900px;
-  margin: auto;
-  display: inline-flex;
 }
 
 .checkbox {
