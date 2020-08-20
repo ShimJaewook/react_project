@@ -1,25 +1,16 @@
-import React, { Component } from "react";
-import {
-  Button,
-  Icon,
-  Image,
-  Item,
-  Label,
-  Divider,
-  Header,
-  Modal,
-} from "semantic-ui-react";
-import "./ItemDetailView.css";
-import ItemStore from "../store/MainImageStore";
-import "./ItemView.css";
-import "./ItemView.scss";
+import React, { Component } from "react"
+import { Button, Icon, Image, Item, Label, Divider, Header, Modal } from "semantic-ui-react"
+import "./ItemDetailView.css"
+import ItemStore from "../store/MainImageStore"
+import "./ItemView.css"
+import "./ItemView.scss"
 
 class ItemDetailView extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       open: false,
-    };
+    }
   }
 
   render() {
@@ -37,8 +28,8 @@ class ItemDetailView extends Component {
           <Image size="large" src={this.props.item.detailUrl} wrapped />
         </Modal.Content>
       </Modal>
-    );
+    )
   }
 }
 
-export default ItemDetailView;
+export default ItemDetailView
