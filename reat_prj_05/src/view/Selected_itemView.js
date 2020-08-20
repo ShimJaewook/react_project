@@ -10,10 +10,13 @@ class Selected_itemView extends Component {
     const items = toJS(selectItems).selectItems
 
     return (
+
       <div className="sp_cart">
         <div className='title'>
         <h1> 장바구니 내역</h1></div>
         <div className='sp_content'>
+
+
         {items.map((item) => {
           return (
             <ItemView_no_btn

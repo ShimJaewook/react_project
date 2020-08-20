@@ -28,9 +28,9 @@ class ItemView extends Component {
               <ItemDetailView item={item} />
             </div>
             <div>
-              <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
-                <h1>+</h1>
-              </div>
+                <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
+                    <h1>+</h1>
+                </div>
             </div>
           </dlv>
         </div>

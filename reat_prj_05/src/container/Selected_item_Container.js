@@ -1,7 +1,5 @@
 import React, { Component } from "react"
-
 import { inject, observer } from "mobx-react"
-
 import Selected_itemView from "../view/Selected_itemView"
 import "./Selected_item.css"
 
