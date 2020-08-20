@@ -2,9 +2,18 @@ import React, { Component } from "react";
 import ItemDetailView from "./ItemDetailView";
 import "./ItemView.css";
 import "./ItemView.scss";
+import { inject, observer } from "mobx-react";
 
+@inject("StateStore")
+@observer
 class ItemView extends Component {
   state = { mouse: true };
+
+  changeState = (state, item) => {
+    this.props.StateStore.setState(state);
+    this.props.onAdd_SelectedItem(item);
+  }
+
   render() {
     const { item, onAdd_SelectedItem } = this.props;
 
@@ -28,9 +37,11 @@ class ItemView extends Component {
               <ItemDetailView item={item} />
             </div>
             <div>
-              <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
-                <h1>+</h1>
-              </div>
+              <a href="shopping_cart">
+                <div className="btn" onClick={this.changeState("allItem",item)}>
+                  <h1>+</h1>
+                </div>
+              </a>
             </div>
           </dlv>
         </div>
