@@ -96,3 +96,35 @@
   margin: 0 auto;
   display: inline-flex;
 }
+
+.sub_img {
+  width: 800px;
+  height: 250px;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+  position: relative;
+  .sub_dsc {
+    position: absolute;
+    z-index: 9999999;
+  }
+}
+
+.sub_img h1 {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 40%;
+  font-size: 3rem;
+  color: white;
+  font-family: "NanumGothic";
+
+  &:hover {
+    padding: 3px;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}

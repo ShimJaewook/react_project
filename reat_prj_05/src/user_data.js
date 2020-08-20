@@ -1,9 +1,9 @@
 const Users = [
-  {
-    id: "user",
-    password: "user",
-    name: "박민재",
-  },
+    {
+        id: 'user',
+        password: 'user',
+        name: '멀캠' 
+    }
 ]
 
 export default Users

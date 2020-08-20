@@ -46,7 +46,6 @@
 
 .header_imgs {
   text-align: center;
-
   padding-bottom: 10rem;
   img {
     align-items: center;
@@ -56,12 +55,26 @@
 }
 
 .sub_bottom {
-  //   display: flex;
   margin: auto;
   text-align: center;
-  .btnnp {
-    margin-top: 10rem;
-    width: 15rem;
+  .btn {
+    margin-top: 3rem;
+    width: 25rem;
+  }
+
+  .btn_txt {
+    padding-top: 7rem;
+    h3 {
+      font-family: "NanumGothic";
+      font-size: 1.5rem;
+    }
+  }
+  .sub_bottom_wrap {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
   }
 
   a:visited {

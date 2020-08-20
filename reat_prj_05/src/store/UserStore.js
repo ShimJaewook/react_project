@@ -23,6 +23,7 @@ class UserStore {
   @action
   changeLogin() {
     this.login = !this.login
+    // console.log(this.login)
   }
 
   //Mobx state를 변경할 함수에 @action 데코레이터를 사용하여 선언
