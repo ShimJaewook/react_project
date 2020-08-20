@@ -10,7 +10,13 @@ class Selected_itemView extends Component {
     const items = toJS(selectItems).selectItems
 
     return (
-      <div id="sp_cartV" className="sp_cart">
+
+      <div className="sp_cart">
+        <div className='title'>
+        <h1> 장바구니 내역</h1></div>
+        <div className='sp_content'>
+
+
         {items.map((item) => {
           return (
             <ItemView_no_btn
@@ -21,10 +27,12 @@ class Selected_itemView extends Component {
             />
           )
         })}
-        <div>
-          <span>총 결제 금액 : {this.props.total_price}</span>
-          <button onClick={() => onLoginCheck(total_price)}>결제하기</button>
+        <div className='payment'>
+          <span><h1><b>총 결제 금액 :</b> {this.props.total_price} 원</h1></span>
+          <button class='btn' onClick={() => onLoginCheck(total_price)}> <h3>결제하기</h3></button>
         </div>
+        </div>
+
       </div>
     )
   }

@@ -21,7 +21,7 @@ class ItemView_no_btn extends Component {
         <img className="cart_imgs" src={item.imgUrl} width="200px" height="200px" />
         <div className="cart_info">
           <span>
-            <h2>{item.name}</h2>
+            <h2 className='itme_title'>{item.name}</h2>
             <h3>가격: {item.price}</h3>
             <h3>수량: </h3>
             <button onClick={() => this.onDelete(item)}>-</button>
