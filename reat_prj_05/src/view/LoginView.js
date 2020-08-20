@@ -33,6 +33,7 @@ class LoginView extends Component {
                                 <img src="/logo_image/LOGO.png"/>
                                 <h1> 멍토피아</h1>
                             </a>
+                       <div>
                         </div>
                         <ul class="liMenu">
                             <li>
@@ -128,10 +129,17 @@ class LoginView extends Component {
                         </Modal.Actions>
                     </Modal>
                     }
-                    {!this.state.visible && <div className="welcome"> {rootUser.name}님 안녕하세요!</div>}
-                    {!this.state.visible && <span> <a href='#' className="logout" onClick={this.changeView}>로그아웃</a></span>}
                     </li>
-                </ul>
+                    </ul>
+                    <div class="welcome_class">
+                    {!this.state.visible && <div className="welcome"> {rootUser.name}님 안녕하세요!</div>}
+                   <ul>
+                       <li>
+                    {!this.state.visible && <span> <a id="logout" href='#' className="logout" onClick={this.changeView}>로그아웃</a></span>}
+                       </li>
+                    </ul>
+                 </div>  
+                 </div> 
             </div>
             </div>
         </div>
