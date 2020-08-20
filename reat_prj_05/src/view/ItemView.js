@@ -29,7 +29,9 @@ class ItemView extends Component {
             </div>
             <div>
               <div className="btn" onClick={() => onAdd_SelectedItem(item)}>
-                <h1>+</h1>
+                <a href="#sp_cartV">
+                  <h1>+</h1>
+                </a>
               </div>
             </div>
           </dlv>
