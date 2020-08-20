@@ -1,8 +1,9 @@
 const Users = [
     {
         id: 'user',
-        password: 'user'
+        password: 'user',
+        name: '멀캠' 
     }
 ]
 
-export default Users;
+export default Users
