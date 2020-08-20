@@ -1,4 +1,5 @@
 .sp_cart_wrap {
+
   margin: 2rem;
   border-top: 1px solid rgb(223, 223, 223);
   padding: 2rem;
@@ -19,8 +20,10 @@
   }
 }
 
+
 .sp_cart {
-  padding: 10rem 0;
+  position: relative;
+  padding:5rem ;
   //   margin: 10rem auto;
   border-top: 1px solid black;
   button {
@@ -30,16 +33,84 @@
     background: transparent;
     text-decoration: none;
   }
+  .title{
+    background: #3aa1dd;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-bottom: 3rem;
+
+    h1{
+      color: white;
+      font-size:20px;
+      font-family: "BMHANNAAir"; 
+      font-size: 1.5rem;
+      padding:2rem;
+    }
+
+  }
 }
 
+
+.sp_content{
+  padding-top: 3rem;
+}
 .cart_imgs {
   width: 150px;
   height: 150px;
   border-radius: 10px;
+  border: 2px solid  #3aa1dd;
 }
 
 .cart_wrap {
   display: inline-flex;
   justify-items: auto;
   padding: 1rem;
+  border: 1px solid lightgray;
+  margin: 1rem;
+.itme_title{
+  h2{
+    font-weight: bolder;
+  }
+
+}
+}
+
+.payment { 
+  margin-top: 5rem;
+   b,
+  h1{
+    font-family: "NanumGothic";  
+    font-size: 1.5rem;
+    font-weight: lighter;
+    
+  }
+  
+  // h2{
+  //   font-family: "NanumGothic";  
+  //   font-size: 6px;
+  // }
+
+  .btn {
+    margin-top:1rem;
+    padding: 7px 10px;
+    width: 10rem;
+
+    h3{
+      font-size: 17px;
+    }
+
+    &:hover {
+      background-color: rgb(238, 160, 15);
+      color: white;
+      transition: ease-in 0.2s;
+      border:none;
+      font-weight: bolder;
+      
+    }
+    }
+    
+ 
+
 }
