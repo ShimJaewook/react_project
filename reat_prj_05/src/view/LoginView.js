@@ -29,7 +29,7 @@ class LoginView extends Component {
 
     return (
       <div className="top-header">
-        <div></div>
+       
         <div class="header_content">
           <div class="header_menu">
             <div className="logo">
