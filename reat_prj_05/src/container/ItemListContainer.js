@@ -50,13 +50,15 @@ class ItemListContainer extends Component {
               <h3>사랑하는 반려동물을 위해 원하는 아이템을 선택해보세요.</h3>
             </div>
             <div className="btn">
-              <Button
-                onClick={() => this.changeState("allItem")}
-                inverted
-                color="orange"
-              >
-                <a href="#">나만의 상품으로 구독하기</a>
+              <a href="#">
+                <Button
+                  onClick={() => this.changeState("allItem")}
+                  inverted
+                  color="orange"
+                >
+                  나만의 상품으로 구독하기
               </Button>
+              </a>
             </div>
           </div>
         </div>

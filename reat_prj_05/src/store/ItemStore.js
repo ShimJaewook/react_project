@@ -40,6 +40,7 @@ class ItemStore {
       this.selectItems = this.selectItems.concat(ele)
       this.total_price = this.total_price + ele.price
       ele.quantity = 1
+      alert("상품이 추가되었습니다!");
     }
 
     // this.selectItems = toJS(this.selectItems);
