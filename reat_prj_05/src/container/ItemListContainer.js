@@ -1,23 +1,25 @@
-import React, { Component } from "react";
-import { inject, observer } from "mobx-react";
-import ItemListView from "../view/ItemListView";
-import DIY_item from "../view/DIY_item";
-import "./ItemListContainer.scss";
-import { Button } from "semantic-ui-react";
-import MiddleContentContainer from "./MiddleContentContainer";
+import React, { Component } from "react"
+import { inject, observer } from "mobx-react"
+import ItemListView from "../view/ItemListView"
+import DIY_item from "../view/DIY_item"
+import "./ItemListContainer.scss"
+import { Button } from "semantic-ui-react"
+import MiddleContentContainer from "./MiddleContentContainer"
 
 @inject("ItemStore")
-@inject("StateStore")
+@inject("StateStore", "UserStore")
 @observer
 class ItemListContainer extends Component {
-  //클릭함수 구현
+  onLoginCheck = (e) => {
+    this.props.UserStore.loginCheck(e)
+  }
 
   changeState = (state) => {
-    this.props.StateStore.setState(state);
-  };
+    this.props.StateStore.setState(state)
+  }
 
   render() {
-    const { items } = this.props.ItemStore;
+    const { items } = this.props.ItemStore
 
     return (
       <div>
@@ -40,9 +42,9 @@ class ItemListContainer extends Component {
         <MiddleContentContainer />
 
         <div className="sub_bottom">
-          <ItemListView ItemList={items} item_class="A" />
-          <ItemListView ItemList={items} item_class="B" />
-          <ItemListView ItemList={items} item_class="C" />
+          <ItemListView ItemList={items} item_class="A" onLoginCheck={this.onLoginCheck} />
+          <ItemListView ItemList={items} item_class="B" onLoginCheck={this.onLoginCheck} />
+          <ItemListView ItemList={items} item_class="C" onLoginCheck={this.onLoginCheck} />
 
           <div className="sub_bottom_wrap">
             <div className="btn_txt">
@@ -51,20 +53,16 @@ class ItemListContainer extends Component {
             </div>
             <div className="btn">
               <a href="#">
-                <Button
-                  onClick={() => this.changeState("allItem")}
-                  inverted
-                  color="orange"
-                >
+                <Button onClick={() => this.changeState("allItem")} inverted color="orange">
                   나만의 상품으로 구독하기
-              </Button>
+                </Button>
               </a>
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default ItemListContainer;
+export default ItemListContainer

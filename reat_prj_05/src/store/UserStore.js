@@ -18,13 +18,13 @@ class UserStore {
       alert("상품을 등록해주세요")
     } else if (this.login) {
       switch (price) {
-        case "subA":
+        case "A":
           alert("19000원 결제가 완료되었습니다.")
           break
-        case "subB":
+        case "B":
           alert("29900원 결제가 완료되었습니다.")
           break
-        case "subC":
+        case "C":
           alert("39300원 결제가 완료되었습니다.")
           break
         default:
