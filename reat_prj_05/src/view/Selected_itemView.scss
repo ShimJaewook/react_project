@@ -22,10 +22,13 @@
 
 
 .sp_cart {
+  margin:3rem auto;
+  width: 100rem;
   position: relative;
   padding:5rem ;
   //   margin: 10rem auto;
-  border-top: 1px solid black;
+  border: 1px solid lightgray;
+  border-radius: 10px;
   button {
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -36,6 +39,7 @@
   .title{
     background: #3aa1dd;
     width: 100%;
+    border-radius: 10px 10px 0 0;
     position: absolute;
     top:0;
     left: 0;
