@@ -42,6 +42,10 @@ class ItemListContainer extends Component {
         <MiddleContentContainer />
 
         <div className="sub_bottom">
+
+          <div className='sub_bottom_title'> 
+          
+          <span> <img color='white' src="/logo_image/LOGO.png" ></img> <h1>멍토피아 구독상품 알아보기</h1></span></div>
           <ItemListView ItemList={items} item_class="A" onLoginCheck={this.onLoginCheck} />
           <ItemListView ItemList={items} item_class="B" onLoginCheck={this.onLoginCheck} />
           <ItemListView ItemList={items} item_class="C" onLoginCheck={this.onLoginCheck} />

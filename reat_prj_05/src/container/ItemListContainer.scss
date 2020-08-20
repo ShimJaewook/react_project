@@ -44,6 +44,38 @@
   }
 }
 
+.sub_bottom_title{
+  margin:10rem 8rem auto;
+  background-color: #41b182;
+
+  width: 70rem;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  -webkit-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 11px 10px 22px 0px rgba(0, 0, 0, 0.75);
+  span{
+    display: inline-flex;
+    align-items: center;
+
+    img{
+     height: 5rem;
+     padding:0;
+     margin:0;
+    }  
+  }
+
+
+  b,h1{
+    color: white;
+    font-size: 2rem;
+    padding:3rem .8rem;
+    font-weight: lighter;
+    font-family: "NanumGothic";
+  }
+}
+
 .header_imgs {
   text-align: center;
   padding-bottom: 10rem;
@@ -51,6 +83,7 @@
     align-items: center;
     padding: 1rem;
     margin: auto;
+
   }
 }
 
