@@ -16,8 +16,21 @@ class UserStore {
   loginCheck(price) {
     if (price == 0) {
       alert("상품을 등록해주세요")
-    } else if (this.login) alert(price + "원 결제가 완료되었습니다.")
-    else alert("로그인 후에 다시 결제해주세요")
+    } else if (this.login) {
+      switch (price) {
+        case "subA":
+          alert("19000원 결제가 완료되었습니다.")
+          break
+        case "subB":
+          alert("29900원 결제가 완료되었습니다.")
+          break
+        case "subC":
+          alert("39300원 결제가 완료되었습니다.")
+          break
+        default:
+          alert(price + "원 결제가 완료되었습니다.")
+      }
+    } else alert("로그인 후에 다시 결제해주세요")
   }
 
   @action
