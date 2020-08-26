@@ -52,7 +52,7 @@
 
 ## 🐝 How to use
 	메뉴바 / 슬라이드
-![](./assets/slide_nav.gif)
+![](./assets/slide_nav.gif.)
 <!-- <img src="./assets/slide_nav.gif"> -->
 <br />
 <br />
