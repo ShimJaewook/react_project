@@ -52,26 +52,26 @@
 
 ## 🐝 How to use
 	메뉴바 / 슬라이드
-<img src="assets/">
+<img src="assets/slide_nav.gif">
 <br />
 <br />
 
 	구독상품
-<img src="assets/">
+<img src="assets/main_sub.gif">
 <br />
 <br />
 
 	Checkbox
-<img src="assets/">
-<br />
-<br />
-
-	로그인
-<img src="assets/">
+<img src="assets/sub_checkbox.gif">
 <br />
 <br />
 
 	장바구니 / 결제
-<img src="assets/">
+<img src="assets/sp_cart.gif">
+<br />
+<br />
+
+	로그인
+<img src="assets/login.gif">
 <br />
 <br />
