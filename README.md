@@ -61,7 +61,7 @@
 <br />
 <br />
 
-	장바구니 / 결제
+	Checkbox
 <img src="assets/">
 <br />
 <br />
@@ -71,7 +71,7 @@
 <br />
 <br />
 
-	Checkbox
+	장바구니 / 결제
 <img src="assets/">
 <br />
 <br />
