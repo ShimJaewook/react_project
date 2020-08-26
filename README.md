@@ -58,7 +58,7 @@
 <br />
 
 	구독상품
-<img src="./assets/main_sub.gif">
+<img src="./assets/main_sub.gif.gif" width="100%">
 <br />
 <br />
 
