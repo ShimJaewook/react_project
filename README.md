@@ -2,7 +2,7 @@
 
 <br/>
 
-## 1. Development
+## 🐕 Development
 ### 개발목표  
 **React**와 **Mobx**로 `container` `store` `view`로 웹을 관리하고 **obsevable action** 기능으로 `state`를 관리하여 rendering 해준다  
 		
@@ -28,7 +28,7 @@
 <br/>
 
 
-## 2. Tech stack  
+## ⭐️ Tech stack  
 ### React  
 	변경되는 state와 전달되는 props를 통해 컴포넌트를 랜더링 하여 Single Page Application으로 구현  
 	
@@ -50,7 +50,7 @@
 
 <br />
 
-## 3. How to use
+## 🐝 How to use
 	메뉴바 / 슬라이드
 <img src="assets/">
 <br />
