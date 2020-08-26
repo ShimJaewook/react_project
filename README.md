@@ -4,8 +4,10 @@
 
 ## 1. Development
 ### 개발목표  
-> **React**와 **Mobx**로 `container` `store` `view`로 웹을 관리하고 **obsevable action** 기능으로 `state`를 관리하여 rendering 해준다  
+**React**와 **Mobx**로 `container` `store` `view`로 웹을 관리하고 **obsevable action** 기능으로 `state`를 관리하여 rendering 해준다  
 		
+<br/>
+
 ### 개발범위  
 - 헤더: 메뉴바와 로그인 구현	
 - 바디: 상품리스트와 리스트 컴포넌트 구현  
@@ -16,6 +18,7 @@
 - 회원가입을 통해 `UserData` 추가 / 유저 데이터 및 아이템 데이터 추가 수정 삭제 구현 시간부족
 - `DetailView`에서 로그인 여부와 회원정보로 간단한 리뷰 작성 / DB미연동 및 시간부족  
 	
+<br/>
 	
 ### 개발기간  
 - 아이템 및 개발범위 회의 하루  
