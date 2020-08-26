@@ -2,7 +2,7 @@
 
 <br/>
 
-## 1. 개발 
+## 1. Development
 ### 개발목표  
 > **React**와 **Mobx**로 `container` `store` `view`로 웹을 관리하고 **obsevable action** 기능으로 `state`를 관리하여 rendering 해준다  
 		
@@ -25,23 +25,50 @@
 <br/>
 
 
-## 2. 사용기술  
+## 2. Tech stack  
 ### React  
-	적용된 기능: 변경되는 state와 전달되는 props를 통해 컴포넌트를 랜더링 하여 Single Page Application으로 구현  
+	변경되는 state와 전달되는 props를 통해 컴포넌트를 랜더링 하여 Single Page Application으로 구현  
 	
 	
 ### Mobx  
-	적용된 기능: ovservable과 action 개념을 사용하여 랜더링 해줄 스테이트와 이벤트 함수 통합관리  
+	ovservable과 action 개념을 사용하여 랜더링 해줄 스테이트와 이벤트 함수 통합관리  
 	
 	
 ### Scss, Semantic_UI, React_Bootstrap  
-	적용된 기능: 컴포넌트의 디자인과 레이아웃을 정의하고 가시성 높은 각종 UI를 구현  
+	컴포넌트의 디자인과 레이아웃을 정의하고 가시성 높은 각종 UI를 구현  
 	
 	
 ### Git  
-	적용된 기능: 프로젝트 공동 공유와 관리 기능  
+	프로젝트 공동 공유와 관리 기능  
 	
 	
 ### 기타 라이브러리  
-	적용된 기능: react-slideshow-image 라이브러리로 메인페이지 대문 이미지 슬라이드 적용  
+	react-slideshow-image 라이브러리로 메인페이지 대문 이미지 슬라이드 적용  
 
+<br />
+
+## 3. How to use
+	메뉴바 / 슬라이드
+<img src="assets/">
+<br />
+<br />
+
+	구독상품
+<img src="assets/">
+<br />
+<br />
+
+	장바구니 / 결제
+<img src="assets/">
+<br />
+<br />
+
+	로그인
+<img src="assets/">
+<br />
+<br />
+
+	Checkbox
+<img src="assets/">
+<br />
+<br />
