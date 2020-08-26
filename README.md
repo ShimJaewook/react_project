@@ -58,24 +58,20 @@
 
 	구독상품
 ![](./assets/main_sub.gif)
-<!-- <img src="./assets/main_sub.gif.gif" width="70%"> -->
 <br />
 <br />
 
 	Checkbox
 ![](./assets/sub_checkbox.gif)
-<img src="./assets/sub_checkbox.gif">
 <br />
 <br />
 
 	장바구니 / 결제
 ![](./assets/sp_cart.gif)
-<img src="./assets/sp_cart.gif">
 <br />
 <br />
 
 	로그인
 ![](./assets/login.gif)
-<img src="./assets/login.gif">
 <br />
 <br />
