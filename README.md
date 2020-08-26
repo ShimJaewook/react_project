@@ -51,6 +51,7 @@
 <br />
 
 ## 🐝 How to use
+<<<<<<< HEAD
 	메뉴바 / 슬라이드
 ![](./assets/slide_nav.gif.gif)
 <!-- <img src="./assets/slide_nav.gif"> -->
@@ -74,5 +75,56 @@
 
 	로그인
 <img src="./assets/login.gif">
+=======
+> **메뉴바 / 슬라이드**
+
+![](./assets/slide_nav.gif)
+
+---
+
+<br />
+<br />
+<br />
+<br />
+
+> **구독상품**
+
+![](./assets/main_sub.gif)
+
+---
+
+<br />
+<br />
+<br />
+<br />
+
+> **Checkbox**
+
+![](./assets/sub_checkbox.gif)
+
+---
+<br />
+<br />
+<br />
+<br />
+
+> **장바구니 / 결제**
+
+![](./assets/sp_cart.gif)
+
+---
+<br />
+<br />
+<br />
+<br />
+
+> **로그인**
+
+![](./assets/login.gif)
+
+---
+<br />
+<br />
+>>>>>>> readme
 <br />
 <br />
