@@ -69,7 +69,7 @@
 <br />
 <br />
 
-	Checkbox
+> **Checkbox**
 ![](./assets/sub_checkbox.gif)
 ---
 <br />
@@ -77,7 +77,7 @@
 <br />
 <br />
 
-	장바구니 / 결제
+> **장바구니 / 결제**
 ![](./assets/sp_cart.gif)
 ---
 <br />
@@ -85,7 +85,7 @@
 <br />
 <br />
 
-	로그인
+> **로그인**
 ![](./assets/login.gif)
 ---
 <br />
