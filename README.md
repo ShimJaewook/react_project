@@ -3,7 +3,6 @@
 <br/>
 
 ## 1. 개발 
----
 ### 개발목표  
 > **React**와 **Mobx**로 `container` `store` `view`로 웹을 관리하고 **obsevable action** 기능으로 `state`를 관리하여 rendering 해준다  
 		
@@ -27,7 +26,6 @@
 
 
 ## 2. 사용기술  
----
 ### React  
 	적용된 기능: 변경되는 state와 전달되는 props를 통해 컴포넌트를 랜더링 하여 Single Page Application으로 구현  
 	
